@@ -175,8 +175,18 @@ a:hover, a:focus {
   -o-transition: .4s;
   transition: .4s;
 }*/
+.politicianDiv {
+
+}
+.inputDiv {
+  position: relative;
+  width: 500px;
+  /*display: block;*/
+}
+
 
 .politicians {
+  display: none;
   position: absolute;
   overflow: hidden;
 }

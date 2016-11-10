@@ -17,11 +17,33 @@ block content
     form(method='post', action='/')
       .row.twitter-submission
         .col-md-12
-          span.h3 @
-          input.paragraph.form-control(type='text', value='#{user ? user.screen_name : "" }', name='username', placeholder='your twitter handle...', required)
-          button.button.h4(type='submit') Match me!
-          .loading
-            img(src='/images/loading.gif', alt='loading')
+          div.inputDiv
+            span.h3 @
+            input.paragraph.form-control(type='text', value='#{user ? user.screen_name : "" }', name='username', placeholder='your twitter handle...', required)
+            button.button.h4(type='submit') Match me!
+            .loading
+              img(src='/images/loading.gif', alt='loading')
+            .politicianDiv
+              img.politicians#obama(src='/SlyngstadCartoons/ObamaEdited.png')      
+              img.politicians#palin(src='/SlyngstadCartoons/PalinEdited.png')
+              img.politicians#hillz(src='/SlyngstadCartoons/HillzEdited.png')
+              img.politicians#trump(src='/SlyngstadCartoons/TrumpEdited.png')
+              img.politicians#carson(src='/SlyngstadCartoons/BenCarsonEdited.png')
+              img.politicians#bernie(src='/SlyngstadCartoons/BernieEdited.png')
+              img.politicians#cruz(src='/SlyngstadCartoons/CruzEdited4.png')
+              img.politicians#kaine(src='/SlyngstadCartoons/KaineEdited.png')
+              img.politicians#biden(src='/SlyngstadCartoons/BidenLibertyEdited.png')
+              img.politicians#christie(src='/SlyngstadCartoons/Christie3Edited.png')
+              img.politicians#bill(src='/SlyngstadCartoons/BillClintonEdited.png')
+              img.politicians#bohener(src='/SlyngstadCartoons/BohenerEdited.png')
+              img.politicians#fiorina(src='/SlyngstadCartoons/Fiorinaedited.png')
+              img.politicians#mcconnell(src='/SlyngstadCartoons/McConnellEdited.png')
+              img.politicians#pence(src='/SlyngstadCartoons/PenceEdited.png')
+              img.politicians#huckabee(src='/SlyngstadCartoons/HuckabeeEdited.png')
+              img.politicians#jeb(src='/SlyngstadCartoons/JebBushEdited2.png')
+              img.politicians#rand(src='/SlyngstadCartoons/RandPaulEdited.png')
+              img.politicians#rubio(src='/SlyngstadCartoons/Rubio2Edited.png')
+              img.politicians#ryan(src='/SlyngstadCartoons/RyanEdited3.png')
 
     if error
       .row
@@ -81,27 +103,7 @@ block content
         each style, index in styles
           .celeb-img.shrinked.img-container(style=style)
             img(src=(pics[index] || {image:''}).image.replace('_normal','_400x400'), title=(pics[index] || {}).username)
-  .centered-container.politicianDiv
-    img.politicians#obama(src='/SlyngstadCartoons/ObamaEdited.png')      
-    img.politicians#palin(src='/SlyngstadCartoons/PalinEdited.png')
-    img.politicians#hillz(src='/SlyngstadCartoons/HillzEdited.png')
-    img.politicians#trump(src='/SlyngstadCartoons/TrumpEdited.png')
-    img.politicians#carson(src='/SlyngstadCartoons/BenCarsonEdited.png')
-    img.politicians#bernie(src='/SlyngstadCartoons/BernieEdited.png')
-    img.politicians#cruz(src='/SlyngstadCartoons/CruzEdited4.png')
-    img.politicians#kaine(src='/SlyngstadCartoons/KaineEdited.png')
-    img.politicians#biden(src='/SlyngstadCartoons/BidenLibertyEdited.png')
-    img.politicians#christie(src='/SlyngstadCartoons/Christie3Edited.png')
-    img.politicians#bill(src='/SlyngstadCartoons/BillClintonEdited.png')
-    img.politicians#bohener(src='/SlyngstadCartoons/BohenerEdited.png')
-    img.politicians#fiorina(src='/SlyngstadCartoons/Fiorinaedited.png')
-    img.politicians#mcconnell(src='/SlyngstadCartoons/McConnellEdited.png')
-    img.politicians#pence(src='/SlyngstadCartoons/PenceEdited.png')
-    img.politicians#huckabee(src='/SlyngstadCartoons/HuckabeeEdited.png')
-    img.politicians#jeb(src='/SlyngstadCartoons/JebBushEdited2.png')
-    img.politicians#rand(src='/SlyngstadCartoons/RandPaulEdited.png')
-    img.politicians#rubio(src='/SlyngstadCartoons/Rubio2Edited.png')
-    img.politicians#ryan(src='/SlyngstadCartoons/RyanEdited3.png')
+
 
 
 // No footer on this page

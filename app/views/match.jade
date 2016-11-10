@@ -52,11 +52,12 @@ block content
               | #{info}
 
     .row
-      .col-md-8.col-md-push-2#moveCol
+      .col-md-8.col-md-offset-2#moveCol
         .panel-main
           include ./match-panel.jade
-      .social-feed-element 
-
+      
+      .social-feed-element.col-md-2#makeBigger
+        button(disabled='disabled').showTweetFeed Loading Twitter Feed...
 
     .row.how-you-match-label
       .col-md-12
@@ -150,10 +151,10 @@ block content
           length:200,                                     //Integer: For posts with text longer than this length, show an ellipsis.
           show_media:true,                                //Boolean: if false, doesn't display any post images
           media_min_width: 300,                           //Integer: Only get posts with images larger than this value
-          update_period: 5000,                            //Integer: Number of seconds before social-feed will attempt to load new posts.
+          //- update_period: 5000,                            //Integer: Number of seconds before social-feed will attempt to load new posts.
           //- template: "bower_components/social-feed/template.html",                         //String: Filename used to get the post template.
           template_html:                                  //String: HTML used for each post. This overrides the 'template' filename option
-            `<article class="twitter-post"> 
+            `<article class="twitter-post" style="display: none"> 
             <h4>{{=it.author_name}}</h4><p>{{=it.text}} 
             <a href="{{=it.link}}" target="_blank">read more</a>
             </p>
@@ -164,8 +165,14 @@ block content
             return  (content.text) ? content.text.indexOf('fuck') == -1 : true;
           },
           callback: function() {                          //Function: This is a callback function which is evoked when all the posts are collected and displayed
-            $('#moveCol').removeClass('col-md-push-2');
+            $('.showTweetFeed').prop("disabled", false).text('Show Twitter Feed')
             console.log("All posts collected!");
           }
         });
+        $('.showTweetFeed').click(function() {
+          $('.showTweetFeed').hide();
+          $('#makeBigger').removeClass('col-md-2').addClass('col-md-4');
+          $('#moveCol').removeClass('col-md-offset-2');
+          $('.twitter-post').show();
+        })
       });
