@@ -27,12 +27,34 @@ var PERSONALITY = 0,
  * @param  {Object} celebrity the object with the twitter user,
  * profile and distance
  */
+ 
 function displayCelebrity(celebrity) {
   $('.cel_name').text(celebrity.user.name);
   $('.cel_username').text('@' + celebrity.user.username);
   $('.cel_username').attr('href', 'https://twitter.com/' + celebrity.user.username);
+  $('.politicalParty').text(celebrity.user.politicalParty);
   $('.cel_distance').text(Math.round(celebrity.distance * 100) + '%');
   $('.cel_image').attr('src', celebrity.user.image.replace('_normal', '_400x400'));
+
+  var party = celebrity.user.politicalParty;
+  var colorText = $(".cel_name, .matchdiv a, .matchdiv p");
+  var colorElem = $(".left-bar, .celebrity .third-border, .celebrity .avatar, .celebrityp");
+    if (party === "Republican") {
+      colorText.css({color: "#D40000"});
+      colorElem.css({backgroundColor: "D40000", color: "D40000", borderColor: "D40000"});  
+    } else if (party === "Democratic") {
+      colorText.css({color: "0098ff"});
+      colorElem.css({backgroundColor: "0098ff", color: "0098ff", borderColor: "0098ff"});
+    } else if (party === "Libertarian") {
+      colorText.css({color: "FFCB00"});
+      colorElem.css({backgroundColor: "FFCB00", color: "FFCB00", borderColor: "FFCB00"});
+    } else if (party === "Green Party") {
+      colorText.css({color: "038F19"});
+      colorElem.css({backgroundColor: "038F19", color: "038F19", borderColor: "038F19"});
+    } else if (party === "Independent") {
+      colorText.css({color: "3D3D3D"});
+      colorElem.css({backgroundColor: "3D3D3D", color: "3D3D3D", borderColor: "3D3D3D"});
+    }
 
   // Update traits
   var idType;
@@ -43,6 +65,7 @@ function displayCelebrity(celebrity) {
     $(idType + i).css('left', 'calc(' + (trait.value * 100) + '%)');
   });
 }
+
 
 /**
  * Makes updates for a profile type switch

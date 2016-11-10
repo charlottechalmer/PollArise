@@ -1,7 +1,7 @@
 extends ./layout.jade
 
 block title
-  title #{user.name}'s Celebrity Match
+  title #{user.name}'s Politician Match
 
 block extra-header
   link(rel='stylesheet', href='/css/page.css')
@@ -16,9 +16,9 @@ block content
         .col-md-8
           a.button.h3.back(href='javascript:void(0)') &#8592; BACK
           h3 How does this app analyze your personality?
-          p Your Celebrity Match uses the&nbsp;
+          p Your Politician Match uses the&nbsp;
             a(href='https://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/personality-insights.html') IBM Watson Personality Insights service
-            | &nbsp;to analyze the language in your public Twitter feed and apply it to a spectrum of characteristics. Then, we compare your results to the Twitter feeds of 100+ celebrities.
+            | &nbsp;to analyze the language in your public Twitter feed and apply it to a spectrum of characteristics. Then, we compare your results to the Twitter feeds of 50+ politicians.
           h3 What do these traits mean?
           p These traits are drawn from&nbsp;
             a(href='https://en.wikipedia.org/wiki/Big_Five_personality_traits') the Big Five personality traits
@@ -50,7 +50,7 @@ block content
 
     .row.how-you-match-label
       .col-md-12
-        p How you match up against other celebs:
+        p How you match up against other politicans:
 
     .row.other-celebs
       .col-md-6.most-similar

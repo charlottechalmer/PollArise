@@ -126,11 +126,11 @@ router.post('/add/@:username', function(req,res) {
       res.json({success:false, error: 'User is already in the database'});
     }
     else {
-      // Check if the user is verified, >10k followers, and >1k tweets
+      // Check if the user is verified, >10k followers, and >300 tweets
       var showUser = Q.denodeify(req.twit.showUser.bind(req.twit));
       showUser(username)
       .then(function(user) {
-        if (!user.verified || user.tweets < 1000 || user.followers < 10000)
+        if (!user.verified || user.tweets < 300 || user.followers < 10000)
           res.json({success:false, error: 'User does not qualify as a celebrity'});
         else if (user.protected)
           res.json({success:false, error: 'User is protected and cannot be added'});

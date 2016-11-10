@@ -1,4 +1,3 @@
-
 - var personalityTraits = [['Cautious','Curious'],['Easy Going','Organized'],['Reserved', 'Outgoing'],['Analytical', 'Compassionate'],['Confident', 'Sensitive']]
 - var needsTraits = [['Ease','Challenge'],['Independence','Belonging'],['Fulfillment','Exploration'],['Calm','Excitement'],['Contentedness','Acceptance'],['Imperfection','Perfection'],['Restraint','Freedom'],['Indifference','Affection'],['Complacency','Eagerness'],['Obliviousness','Identification'],['Risk','Stability'],['Flexibility','Structure']]
 - var valuesTraits = [['Modernity','Tradition'],['Constancy','Stimulation'],['Stoicism','Hedonism'],['Non-conformity','Conventionality'],['Egoism','Selflessness']]
@@ -33,9 +32,12 @@
 				div.second-border.img-circle
 					div.third-border.img-circle
 						img.cel_image.celebrity
-			div.text-center
-				p.avatar-name
-					a.cel_username
+			div.matchdiv.text-center
+					p.avatar-name
+						a.cel_username
+						span.space &nbsp | &nbsp
+						span.politicalParty
+
 	.row.type-row
 		.col-sm-offset-3.col-xs-offset-1.col-sm-6.col-xs-10
 			div.type-buttons
@@ -86,3 +88,6 @@ div.social-media
 		div.twitter.values.hide-traits
 			a.twitter-share-button(href='https://twitter.com/share', data-text="'#{user.name}'s values are #{Math.round(similar_values[0].distance * 100)}% similar to #{similar_values[0].user.name}'s! #CelebMatch #IBMWatson", data-hashtags='PersonalityInsights')
 				| Tweet
+
+	.col-md-3
+		div.social-feed-container

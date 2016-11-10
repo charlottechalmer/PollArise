@@ -13,7 +13,7 @@ block content
     .row.sub-text
       .col-md-12
         h4
-          | Enter your Twitter handle to see which celebrities have the most similar (and different) personalities to yours!
+          | Enter your Twitter handle to see which politicians are the most similar (and different) to you!
     form(method='post', action='/')
       .row.twitter-submission
         .col-md-12
@@ -22,6 +22,7 @@ block content
           button.button.h4(type='submit') Match me!
           .loading
             img(src='/images/loading.gif', alt='loading')
+
     if error
       .row
         .col-md-12
@@ -43,41 +44,65 @@ block content
       .col-md-12
         p.text-center
           a(href='https://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/') Built with IBM Watson
-    .row.extra-links
-      .col-md-12
-        p.text-center
-          a(href='/tos') Terms of use
-          |  | 
-          a(href='https://www.ibm.com/privacy/us/en/') Privacy Policy
+    //- .row.extra-links
+    //-   .col-md-12
+    //-     p.text-center
+    //-       a(href='/tos') Terms of use
+    //-       |  | 
+    //-       a(href='https://www.ibm.com/privacy/us/en/') Privacy Policy
 
-    - var styles = ['left: 2rem; top: 1rem; width: 2rem; height: 2rem;']
-    - styles.push('left: 2rem; top: 6rem; width: 5rem; height: 5rem;')
-    - styles.push('left: 7rem; top: 2.3rem; width: 3rem; height: 3rem;')
-    - styles.push('left: 6.5rem; top: 12rem; width: 6rem; height: 6rem;')
-    - styles.push('left: 11rem; top: 2.3rem; width: 10rem; height: 10rem;')
-    - styles.push('left: 17rem; top: 14rem; width: 5rem; height: 5rem;')
-    - styles.push('left: 23rem; top: 8rem; width: 8rem; height: 8rem;')
-    - styles.push('left: 25rem; top: 0rem; width: 6rem; height: 6rem;')
-    - styles.push('left: 32rem; top: 6rem; width: 3rem; height: 3rem;')
-    - styles.push('left: 33rem; top: 12rem; width: 9rem; height: 9rem;')
-    - styles.push('left: 35rem; top: 0rem; width: 4rem; height: 4rem;')
-    - styles.push('left: 38rem; top: 5rem; width: 6rem; height: 6rem;')
-    - styles.push('left: 45rem; top: 10rem; width: 6rem; height: 6rem;')
-    - styles.push('left: 45rem; top: 0rem; width: 8rem; height: 8rem;')
-    - styles.push('left: 54rem; top: 14rem; width: 5rem; height: 5rem;')
-    - styles.push('left: 55rem; top: 6rem; width: 7rem; height: 7rem;')
-    - styles.push('left: 57rem; top: 0rem; width: 4rem; height: 4rem;')
-    - styles.push('left: 63rem; top: 3rem; width: 5rem; height: 5rem;')
-    - styles.push('left: 62rem; top: 13rem; width: 6rem; height: 6rem;')
-    - styles.push('left: 66rem; top: 9.5rem; width: 2rem; height: 2rem;')
-    - styles.push('left: 70rem; top: 3rem; width: 6rem; height: 6rem;')
-    - styles.push('left: 72rem; top: 11rem; width: 4rem; height: 4rem;')
-    - styles.push('left: 77rem; top: 6rem; width: 6rem; height: 6rem;')
+   //- - var styles = ['left: 2.2rem; top: 1rem; width: 2rem; height: 2rem;']
+   //-  - styles.push('left: 2rem; top: 6rem; width: 5rem; height: 5rem;')
+   //-  - styles.push('left: 7rem; top: 2.3rem; width: 3rem; height: 3rem;')
+   //-  - styles.push('left: 6.5rem; top: 12rem; width: 6rem; height: 6rem;')
+   //-  - styles.push('left: 11rem; top: 2.3rem; width: 10rem; height: 10rem;')
+   //-  - styles.push('left: 17rem; top: 14rem; width: 5rem; height: 5rem;')
+   //-  - styles.push('left: 23rem; top: 8rem; width: 8rem; height: 8rem;')
+   //-  - styles.push('left: 25rem; top: 0rem; width: 6rem; height: 6rem;')
+   //-  - styles.push('left: 32rem; top: 6rem; width: 3rem; height: 3rem;')
+   //-  - styles.push('left: 33rem; top: 12rem; width: 9rem; height: 9rem;')
+   //-  - styles.push('left: 35rem; top: 0rem; width: 4rem; height: 4rem;')
+   //-  - styles.push('left: 38rem; top: 5rem; width: 6rem; height: 6rem;')
+   //-  - styles.push('left: 45rem; top: 10rem; width: 6rem; height: 6rem;')
+   //-  - styles.push('left: 45rem; top: 0rem; width: 8rem; height: 8rem;')
+   //-  - styles.push('left: 54rem; top: 14rem; width: 5rem; height: 5rem;')
+   //-  - styles.push('left: 55rem; top: 6rem; width: 7rem; height: 7rem;')
+   //-  - styles.push('left: 57rem; top: 0rem; width: 4rem; height: 4rem;')
+   //-  - styles.push('left: 63rem; top: 3rem; width: 5rem; height: 5rem;')
+   //-  - styles.push('left: 62rem; top: 13rem; width: 6rem; height: 6rem;')
+   //-  - styles.push('left: 66rem; top: 9.5rem; width: 2rem; height: 2rem;')
+   //-  - styles.push('left: 70rem; top: 3rem; width: 6rem; height: 6rem;')
+   //-  - styles.push('left: 72rem; top: 11rem; width: 4rem; height: 4rem;')
+   //-  - styles.push('left: 77rem; top: 6rem; width: 6rem; height: 6rem;')
+    
+
     .celebrities
       .centered-container
         each style, index in styles
           .celeb-img.shrinked.img-container(style=style)
             img(src=(pics[index] || {image:''}).image.replace('_normal','_400x400'), title=(pics[index] || {}).username)
+  .centered-container.politicianDiv
+    img.politicians#obama(src='/SlyngstadCartoons/ObamaEdited.png')      
+    img.politicians#palin(src='/SlyngstadCartoons/PalinEdited.png')
+    img.politicians#hillz(src='/SlyngstadCartoons/HillzEdited.png')
+    img.politicians#trump(src='/SlyngstadCartoons/TrumpEdited.png')
+    img.politicians#carson(src='/SlyngstadCartoons/BenCarsonEdited.png')
+    img.politicians#bernie(src='/SlyngstadCartoons/BernieEdited.png')
+    img.politicians#cruz(src='/SlyngstadCartoons/CruzEdited4.png')
+    img.politicians#kaine(src='/SlyngstadCartoons/KaineEdited.png')
+    img.politicians#biden(src='/SlyngstadCartoons/BidenLibertyEdited.png')
+    img.politicians#christie(src='/SlyngstadCartoons/Christie3Edited.png')
+    img.politicians#bill(src='/SlyngstadCartoons/BillClintonEdited.png')
+    img.politicians#bohener(src='/SlyngstadCartoons/BohenerEdited.png')
+    img.politicians#fiorina(src='/SlyngstadCartoons/Fiorinaedited.png')
+    img.politicians#mcconnell(src='/SlyngstadCartoons/McConnellEdited.png')
+    img.politicians#pence(src='/SlyngstadCartoons/PenceEdited.png')
+    img.politicians#huckabee(src='/SlyngstadCartoons/HuckabeeEdited.png')
+    img.politicians#jeb(src='/SlyngstadCartoons/JebBushEdited2.png')
+    img.politicians#rand(src='/SlyngstadCartoons/RandPaulEdited.png')
+    img.politicians#rubio(src='/SlyngstadCartoons/Rubio2Edited.png')
+    img.politicians#ryan(src='/SlyngstadCartoons/RyanEdited3.png')
+
 
 // No footer on this page
 block footer

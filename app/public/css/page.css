@@ -105,6 +105,17 @@
   height: 100%;
 }
 
+
+.matchdiv .space{
+  color: #505051;
+}
+/*.matchdiv p {
+  float: left;
+}*/
+.matchdiv div {
+  float: right;
+}
+
 .similarity {
   display: inline-block;
   margin-top: calc(75px - 1.5rem);
@@ -132,11 +143,11 @@
 }
 .similarity .right-bar {
   right: 50%;
-  background-color: #1cc665;
+  background-color: #FFA551;
 }
 .similarity .left-bar {
   left: 50%;
-  background-color: #0098ff;
+  /*background-color: #0098ff;*/
 }
 .similarity .right-bar div, .similarity .left-bar div {
   height: calc(50% + 1px);
@@ -146,9 +157,9 @@
 .similar-to {
   margin-top: 3px;
 }
-.similar-to span {
+/*.similar-to span {
   color: #0098ff;
-}
+}*/
 .hide-traits {
   display: none;
 }
@@ -195,8 +206,8 @@ a.switch-button-active {
 .me .third-border,
 .me .avatar-name,
 .me .avatar-name a {
-  color: #1cc665;
-  border-color: #1cc665;
+  color: #FFA551;
+  border-color: #FFA551;
   text-decoration: none;
 }
 .me .avatar-name a:hover {
@@ -206,21 +217,21 @@ a.switch-button-active {
   background-color: #87E8B1;
 }
 
-.celebrity,
+/*.celebrity,
 .celebrity .avatar,
 .celebrity .third-border,
-.celebrity .avatar-name,
+.celebrity .avatar-name,*/
 .celebrity .avatar-name a {
-  color: #0098ff;
-  border-color: #0098ff;
+  /*color: #FFEE49;
+  border-color: #FFEE49;*/
   text-decoration: none;
 }
 .celebrity .avatar-name a:hover {
   text-decoration: underline;
 }
-.celebrity .third-border {
+/*.celebrity .third-border {
   background-color: #76C7FF;
-}
+}*/
 
 .me, .celebrity {
   z-index: 2;
@@ -261,7 +272,7 @@ a.switch-button-active {
   top: 0px;
 }
 .avatar-small .overlay-yellow {
-  background-color: rgba(234, 191, 10, 0.52);
+  background-color: rgba(78, 229, 123, 0.52);
   -webkit-transition: .3s;
   -moz-transition: .3s;
   -o-transition: .3s;
@@ -274,9 +285,11 @@ a.switch-button-active {
   -o-transition: .3s;
   transition: .3s;
 }
-.avatar-small .overlay-yellow:hover,
+.avatar-small .overlay-yellow:hover {
+  background-color: rgba(19, 56, 30, 1);
+}
 .avatar-small .overlay-red:hover {
-  background-color: rgba(0, 64, 65, 1);
+  background-color: rgba(98, 0, 0, 1);
 }
 .avatar-small .overlay-yellow:active {
   /*background-color: rgba(234, 191, 10, 1);*/
@@ -346,12 +359,12 @@ a.switch-button-active {
 }
 .mep {
   /* border-color is inherited from .me's color */
-  background-color: #1cc665;
+  background-color: #FFA551;
 }
 
-.celebrityp {
+/*.celebrityp {
   background-color: #0098ff;
-}
+}*/
 
 .bigger {
   z-index: 2;
@@ -365,7 +378,7 @@ a.switch-button-active {
   height: .5rem;
   margin-left: -.25rem;
   bottom: -.25rem;
-  background-color: #d0d2d3;
+  background-color: #d0d2d3 !important;
 }
 
 .more-info {
@@ -484,7 +497,7 @@ a.tlink {
 }
 
 .most-similar .panel-heading p span {
-  color: #eabf0a;
+  color: #4EE57B;
 }
 .most-different .panel-heading p span {
   color: #f04e37;

@@ -21,6 +21,7 @@ var mongoose = require('mongoose'),
 var ProfileSchema = mongoose.Schema({
   name:      String,
   username:  String,
+  politicalParty: String,
   profile:   String,
   followers: Number,
   tweets:    Number,
