@@ -5,7 +5,24 @@ body {
   background-color: #231f20;
   color: #d0d2d3;
   max-height: 100%;
+ /* background-image: url("/SlyngstadCartoons/backgroundLRG.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;*/
 }
+/*
+@media screen and (max-width: 375px) {
+  body {
+  background-color: #231f20;
+  color: #d0d2d3;
+  max-height: 100%;
+  background-image: url("/SlyngstadCartoons/backgroundIMG.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  }
+}*/
+
+
 
 form {
   margin: 0rem;

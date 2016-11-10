@@ -5,9 +5,17 @@ block title
 
 block extra-header
   link(rel='stylesheet', href='/css/page.css')
+  link(rel='stylesheet', href='/css/twitterFeed.css')
+  //- link(href="../bower_components/social-feed/css/jquery.socialfeed.css" rel="stylesheet" type="text/css")
+
 
 block extra-scripts
   script(type='text/javascript', src='/js/page.js')
+  script(src="../bower_components/codebird-js/codebird.js")
+  script(src="../bower_components/doT/doT.min.js")
+  script(src="../bower_components/moment/min/moment.min.js")
+  script(src="../bower_components/moment/locale/it.js")
+  script(src="../bower_components/social-feed/js/jquery.socialfeed.js")
 
 block content
   .overlay-screen.how-it-worked(style='display: none')
@@ -44,9 +52,11 @@ block content
               | #{info}
 
     .row
-      .col-md-8.col-md-push-2
+      .col-md-8.col-md-push-2#moveCol
         .panel-main
           include ./match-panel.jade
+      .social-feed-element 
+
 
     .row.how-you-match-label
       .col-md-12
@@ -129,3 +139,33 @@ block content
       var different_needs =!{JSON.stringify(different_needs)};
       var similar_values =!{JSON.stringify(similar_values)};
       var different_values =!{JSON.stringify(different_values)};
+      $(document).ready(function(){
+        $('.social-feed-element').socialfeed({
+          twitter:{
+            accounts: ['@BarackObama', '@realDonaldTrump', '@mike_pence', '@HillaryClinton', '@timkaine', '@SenJohnMcCain', '@GovGaryJohnson', '@algore', '@Schwarzenegger', '@SarahPalinUSA', '@RepRonPaul', '@RalphNader', '@glennbeck', '@JohnKerry', '@MicheleBachmann', '@MittRomney', '@MikeBloomberg', '@JoeBiden', '@SenSanders', '@DrJillStein', '@RandPaul', '@CoryBooker', '@SpeakerRyan', '@BobbyJindal', '@NancyPelosi', '@GovMikeHuckabee', '@JebBush', '@BernieSanders', '@newtgingrich', '@GovernorPerry', '@SpeakerBoehner', '@KarlRove', '@SenatorReid', '@JerryBrownGov', '@JimDeMint', '@EricCantor', '@jasoninthehouse', '@DarrellIssa', '@GabbyGiffords', '@ScottWalker', '@AllenWest', '@clairecmc', '@SenWarren', '@ChuckGrassley', '@NYCMayor', '@THEHermanCain', '@alfranken', '@SenGillibrand', '@MartinOMalley', '@RickSantorum', '@ChrisChristie', '@tedcruz', '@senatemajldr'],                      
+          limit: 1,                                   //Integer: max number of tweets to load
+          consumer_key: 'ONDTctiHx5gZERU9xMiAAvKEh',          //String: consumer key. make sure to have your app read-only
+          consumer_secret: 'X3SerPhRTzQQCF9GlMUgxtYBzixN3Sy2jpS3XMcZOyDYH2ubox' //String: consumer secret key. make sure to have your app read-only
+          },
+          length:200,                                     //Integer: For posts with text longer than this length, show an ellipsis.
+          show_media:true,                                //Boolean: if false, doesn't display any post images
+          media_min_width: 300,                           //Integer: Only get posts with images larger than this value
+          update_period: 5000,                            //Integer: Number of seconds before social-feed will attempt to load new posts.
+          //- template: "bower_components/social-feed/template.html",                         //String: Filename used to get the post template.
+          template_html:                                  //String: HTML used for each post. This overrides the 'template' filename option
+            `<article class="twitter-post"> 
+            <h4>{{=it.author_name}}</h4><p>{{=it.text}} 
+            <a href="{{=it.link}}" target="_blank">read more</a>
+            </p>
+            </article>`,
+          date_format: "ll",                              //String: Display format of the date attribute (see http://momentjs.com/docs/#/displaying/format/)
+          date_locale: "en",                              //String: The locale of the date (see: http://momentjs.com/docs/#/i18n/changing-locale/)
+          moderation: function(content) {                 //Function: if returns false, template will have class hidden
+            return  (content.text) ? content.text.indexOf('fuck') == -1 : true;
+          },
+          callback: function() {                          //Function: This is a callback function which is evoked when all the posts are collected and displayed
+            $('#moveCol').removeClass('col-md-push-2');
+            console.log("All posts collected!");
+          }
+        });
+      });
