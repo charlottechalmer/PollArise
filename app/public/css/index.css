@@ -91,6 +91,7 @@ a:hover, a:focus {
 }
 .twitter-submission input {
   color: #1cc665;
+  display: inline-block;
   width: auto;
   border-radius: 0px;
   margin: 0px .6rem;
@@ -175,137 +176,328 @@ a:hover, a:focus {
   -o-transition: .4s;
   transition: .4s;
 }*/
-.politicianDiv {
 
-}
 .inputDiv {
   position: relative;
-  width: 500px;
-  /*display: block;*/
+  max-width: 400px;
+  /*display: inline-block;*/
 }
-
 
 .politicians {
-  display: none;
-  position: absolute;
-  overflow: hidden;
+  position: absolute !important;
 }
 
+/* Ex-Large Devices, Wide Screens */
+/*@media only screen and (max-width : 9999px) {*/
 #bernie {
-  max-height: 12em;
-  left: 31em;
-  bottom: 10em;
+  display: none;
+  max-width: 60%;
+  min-width:;
+  width: 15vw;
+  left: -1em;
+  top: 10em;
 }
 
 #biden {
-  bottom: 0;
-  left: 81em;
-  max-height: 12em;
+  display: none;
+  max-width: 13vw;
+  min-width: 150px;
+  padding: .01vw;
 }
 
 #bill {
-  max-height: 12em;
-  left: 42em;
-  bottom: 8em;
+  display: none;
+  max-width: 50%;
+  height: auto;
+  width: 15vw;
+  left: 15em;
+  top: 3em;
 }
 
 #bohener {
-  max-height: 10em;
-  bottom: -1em;
-  left: 33em;
+  display: none;
+  max-height: 17em;
+  top: 32em;
+  left: 1em;
 }
 
 #carson {
-  max-height: 15em;
-  left: 17em;
-  bottom: 8em; 
+  display: none;
+  max-height: 23em;
+  left: -20em;
+  top: 12em; 
 }
 
 #christie {
-  max-height: 11em;
-  left: 80em;
-  bottom: 13em;
+  display: none;
+  max-width: 12vw;
+  top: 9em;
+  left: 91em;  
 }
 
 #cruz {
-  max-height: 9em;
-  left: 48em;
-  bottom: 0em;  
+  display: none;
+  max-height: 15em;
+  left: 13em;
+  top: 28em;  
 }
 
 #fiorina{
-  max-height: 14em;
-  left: 55em;
-  bottom: 5em;
+  display: none;
+  max-height: 18em;
+  left: 29em;
+  top: 21em;
 }
 
 #hillz {
-  max-height:10em;
-  left: 7em;
-  bottom: 20em;
+  display: none;
+  max-width: 60%;
+  min-width: 30%;
+  width: 15vw;
+  left: -20vw;
+  top: 3em;
+  
+}
+@media only screen and (max-width : 640px) {
+  #hillz {
+  max-width: 60%;
+  min-width: 30%;
+  width: 15vw;
+  left: -20vw;
+  top: 8em;
+  
+  }
 }
 
 #huckabee {
-  max-height:17em;
-  left: 66em;
-  bottom: 5em;
+  display: none;
+  max-height:22em;
+  left: 47em;
+  top: 22em;
 }
 
 #jeb {
-  max-height: 11em;
-  left: 1em;
-  bottom: 14em;
+  display: none;
+  max-height: 18em;
+  left: -45em;
+  top: 7em;
 }
 
 #kaine {
-  max-height: 12em;
-  left: 72em;
-  bottom: 3em;
+  display: none;
+  max-height: 18em;
+  left: 38em;
+  top: 7em;
 }
 
 #mcconnell {
-  max-height: 10em;
-  bottom: -1em;
-  left: 1em;
+  display: none;
+  max-height: 18em;
+  top: 31em;
+  left: -46em;
+}
+
+#trump {
+  /*display: none;*/
+  max-width: 40%;
+  min-width: 28%;
+  width: 10vw;
+  left: -8vw;
+  top: 0;
+}
+@media only screen and (max-width : 920px) {
+  #trump {
+  max-width: 40%;
+  min-width: 28%;
+  width: 10vw;
+  left: -25%;
+  top: 0;
+  
+  }
 }
 
 #obama {
-  max-height: 14em;
-  bottom: 16em;
-  left: 60em;
+  /*display: none;*/
+  max-width: 38%;
+  min-width: 28%;
+  width: 10vw;
+  top: -2em;
+  left: 350px;
 }
 #palin {
-  max-height: 15em;
-  left: 71em;
-  bottom: 16em;
+  display: none;
+  max-height: 21em;
+  left: 46em;
+  top: -4em;
 }
 #pence {
-  max-height: 15em;
-  left: 24em;
-  bottom: 1em;
+  display: none;
+  max-height: 23em;
+  left: -9em;
+  top: 21em;
 }
 
 #rand {
-  max-height: 16em;
-  left: 7em;
-  bottom: 3em; 
+  display: none;
+  max-height: 25em;
+  left: -35em;
+  top: 15em; 
 }
 
 #rubio {
-  max-height: 11em;
-  bottom: -1em;
-  left: 13em;
+  display: none;
+  max-height: 19em;
+  top: 28em;
+  left: -27em;
 }
 #ryan {
-  max-height: 10em;
-  left: 60em;
-  bottom: 0em;
+  display: none;
+  max-height: 15em;
+  left: 35em;
+  top: 32em;
+}
+
+}
+/* Large Devices, Wide Screens (macbook pro 15in 1440 x 900) */
+/*@media only screen and (max-width : 1440px) {
+#bernie {
+  max-width: 100%;
+  height: auto;
+  width: auto/9;
+  left: 0em;
+  top: 11em;
+}
+
+#biden {
+  top: 25em;
+  left: 57em;
+  max-height: 19em;
+}
+
+#bill {
+  max-height: 17em;
+  left: 15em;
+  top: 3em;
+}
+
+#bohener {
+  max-height: 14em;
+  top: 32em;
+  left: 1em;
+}
+
+#carson {
+  max-height: 21em;
+  left: -20em;
+  top: 12em; 
+}
+
+#christie {
+  max-height: 13em;
+  left: 57em;
+  top: 6em;
+}
+
+#cruz {
+  max-height: 12em;
+  left: 13em;
+  top: 28em;  
+}
+
+#fiorina{
+  max-height: 15em;
+  left: 29em;
+  top: 21em;
+}
+
+#hillz {
+  max-height: 13em;
+  left: -36em;
+  top: -1em;
+}
+
+#huckabee {
+  max-height: 19em;
+  left: 47em;
+  top: 22em;
+}
+
+#jeb {
+  max-height: 15em;
+  left: -45em;
+  top: 7em;
+}
+
+#kaine {
+  max-height: 15em;
+  left: 38em;
+  top: 7em;
+}
+
+#mcconnell {
+  max-height: 15em;
+  top: 27em;
+  left: -38em;
+}
+
+#obama {
+  max-height: 18em;
+  top: -3em;
+  left: 29em;
+}
+#palin {
+  max-height: 18em;
+  left: 46em;
+  top: -4em;
+}
+#pence {
+  max-height: 20em;
+  left: -9em;
+  top: 21em;
+}
+
+#rand {
+  max-height: 22em;
+  left: -32em;
+  top: 14em; 
+}
+
+#rubio {
+  max-height: 16em;
+  top: 28em;
+  left: -27em;
+}
+#ryan {
+  max-height: 12em;
+  left: 35em;
+  top: 32em;
 }
 #trump {
-  max-height: 14em;
-  left: 23em;
-  bottom: 15em;
+  max-height: 20em;
+  left: -13em;
+  top: -3em;
 }
+}
+
+/* Medium Devices, Desktops */
+/*@media only screen and (max-width : 992px) {
+}
+*/
+/* Small Devices, Tablets */
+/*@media only screen and (max-width : 768px) {
+
+}*/
+
+/* Extra Small Devices, Phones */ 
+/*@media only screen and (max-width : 480px) {
+
+}*/
+
+/* Custom, iPhone Retina */ 
+/*@media only screen and (max-width : 320px) {
+
+}*/
+
 /**
 * Media Queries
 */

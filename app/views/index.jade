@@ -15,9 +15,9 @@ block content
         h4
           | Enter your Twitter handle to see which politicians are the most similar (and different) to you!
     form(method='post', action='/')
-      .row.twitter-submission
-        .col-md-12
-          div.inputDiv
+    .row.twitter-submission
+      .col-md-12
+        .inputDiv
             span.h3 @
             input.paragraph.form-control(type='text', value='#{user ? user.screen_name : "" }', name='username', placeholder='your twitter handle...', required)
             button.button.h4(type='submit') Match me!
@@ -66,6 +66,8 @@ block content
       .col-md-12
         p.text-center
           a(href='https://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/') Built with IBM Watson
+        p.text-center
+          a(href='https://www.instagram.com/slyngstad_cartoons/') Caricatures by Ben Slyngstad
     //- .row.extra-links
     //-   .col-md-12
     //-     p.text-center
