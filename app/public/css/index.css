@@ -297,33 +297,6 @@ a:hover, a:focus {
   left: -46em;
 }
 
-#trump {
-  /*display: none;*/
-  max-width: 40%;
-  min-width: 28%;
-  width: 10vw;
-  left: -8vw;
-  top: 0;
-}
-@media only screen and (max-width : 920px) {
-  #trump {
-  max-width: 40%;
-  min-width: 28%;
-  width: 10vw;
-  left: -25%;
-  top: 0;
-  
-  }
-}
-
-#obama {
-  /*display: none;*/
-  max-width: 38%;
-  min-width: 28%;
-  width: 10vw;
-  top: -2em;
-  left: 350px;
-}
 #palin {
   display: none;
   max-height: 21em;
@@ -357,7 +330,75 @@ a:hover, a:focus {
   top: 32em;
 }
 
+
+
+
+/*THIS WORKS!*/
+
+#trump {
+  /*display: none;*/
+  max-width: 40%;
+  min-width: 28%;
+  width: 10vw;
+  left: -8vw;
+  top: 0;
 }
+@media only screen and (max-width : 920px) {
+  #trump {
+  max-width: 40%;
+  min-width: 28%;
+  width: 10vw;
+  left: -23%;
+  top: 0;
+  
+  }
+}
+
+@media only screen and (max-width : 320px) {
+  #trump {
+    max-width: 40%;
+    min-width: 28%;
+    width: 10vw;
+    left: -8%;
+    top: 4em;
+  }
+}
+#obama {
+  /*display: none;*/
+  max-width: 38%;
+  min-width: 28%;
+  width: 10vw;
+  top: -2em;
+  left: 360px;
+}
+
+@media only screen and (max-width : 460px) {
+  #obama {
+    max-width: 38%;
+    min-width: 28%;
+    width: 10vw;
+    top: 3em;
+    left: 210px;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #obama {
+    max-width: 38%;
+    min-width: 28%;
+    width: 10vw;
+    top: 3em;
+    left: 280px;
+  }
+  #trump {
+    max-width: 40%;
+    min-width: 28%;
+    width: 10vw;
+    left: -7%;
+    top: 4em;
+  }
+}
+
 /* Large Devices, Wide Screens (macbook pro 15in 1440 x 900) */
 /*@media only screen and (max-width : 1440px) {
 #bernie {
