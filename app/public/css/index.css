@@ -214,13 +214,6 @@ a:hover, a:focus {
   top: 3em;
 }
 
-#bohener {
-  display: none;
-  max-height: 17em;
-  top: 32em;
-  left: 1em;
-}
-
 #carson {
   display: none;
   max-height: 23em;
@@ -249,25 +242,7 @@ a:hover, a:focus {
   top: 21em;
 }
 
-#hillz {
-  display: none;
-  max-width: 60%;
-  min-width: 30%;
-  width: 15vw;
-  left: -20vw;
-  top: 3em;
-  
-}
-@media only screen and (max-width : 640px) {
-  #hillz {
-  max-width: 60%;
-  min-width: 30%;
-  width: 15vw;
-  left: -20vw;
-  top: 8em;
-  
-  }
-}
+
 
 #huckabee {
   display: none;
@@ -290,19 +265,6 @@ a:hover, a:focus {
   top: 7em;
 }
 
-#mcconnell {
-  display: none;
-  max-height: 18em;
-  top: 31em;
-  left: -46em;
-}
-
-#palin {
-  display: none;
-  max-height: 21em;
-  left: 46em;
-  top: -4em;
-}
 #pence {
   display: none;
   max-height: 23em;
@@ -317,23 +279,462 @@ a:hover, a:focus {
   top: 15em; 
 }
 
+
+/*THIRD ANIMATION*/
+#palin {
+  max-width: 50%;
+  min-width: 30%;
+  width: 15vw;
+  left: 30vw;
+  top: -1em;
+}
+#hillz {
+  max-width: 60%;
+  min-width: 50%;
+  width: 15vw;
+  left: -20vw;
+  top: 3em;
+  
+}
+
+@media only screen and (max-width : 1609px) { 
+  #palin { 
+    max-width: 50%;
+    min-width: 40%;
+    width: 13vw;
+    left: 500px;
+    top: -1em;
+  }
+}
+@media only screen and (max-width : 1200px) { 
+  #hillz {
+    max-width: 60%;
+    min-width: 40%;
+    width: 15vw;
+    left: -20vw;
+    top: 3em;
+  }
+  #palin { 
+    max-width: 50%;
+    min-width: 40%;
+    width: 13vw;
+    left: 450px;
+    top: -1em;
+  }
+}
+
+@media only screen and (max-width : 900px) { 
+  #hillz {
+    max-width: 60%;
+    min-width: 45%;
+    width: 15vw;
+    left: -15vw;
+    top: 12em;
+  }
+  #palin { 
+    max-width: 50%;
+    min-width: 40%;
+    width: 13vw;
+    left: 95%;
+    top: 12em;
+  }
+}
+@media only screen and (max-width : 600px) { 
+  #hillz {
+    max-width: 60%;
+    min-width: 45%;
+    width: 15vw;
+    left: -8vw;
+    top: 15em;
+  }
+  #palin { 
+    max-width: 50%;
+    min-width: 40%;
+    width: 13vw;
+    left: 80%;
+    top: 16em;
+  }
+}
+/*
+@media only screen and (max-width : 570px) { 
+  
+}*/
+
+@media only screen and (max-width : 460px) { 
+  #palin { 
+    max-width: 50%;
+    min-width: 40%;
+    width: 13vw;
+    left: 80%;
+    top: 14em;
+  }
+}
+
+@media only screen and (max-width : 380px) { 
+  #palin { 
+    max-width: 50%;
+    min-width: 40%;
+    width: 13vw;
+    left: 70%;
+    top: 15em;
+  }
+}
+
+
+/*@media only screen and (max-width : 640px) {
+  #hillz {
+  max-width: 60%;
+  min-width: 30%;
+  width: 15vw;
+  left: -20vw;
+  top: 8em;
+  
+  }
+}*/
+
+/*FADE IN/OUT*/
+#mcconnell {
+  /*display: none;*/
+  max-width: 50%;
+  min-width: 40%;
+  width: 13vw;
+  top: 26em;
+  left: -20vw;
+}
+
 #rubio {
-  display: none;
-  max-height: 19em;
-  top: 28em;
-  left: -27em;
+  /*display: none;*/
+  max-width: 50%;
+  min-width: 40%;
+  width: 15vw;
+  top: 25em;
+  left: -3vw;
 }
+
+#bohener {
+  /*display: none;*/
+  max-width: 50%;
+  min-width: 40%;
+  width: 15vw;
+  top: 26em;
+  left: 15vw;
+}
+
 #ryan {
+  /*display: none;*/
+  max-width: 50%;
+  min-width: 40%;
+  width: 15vw;
+  left: 34vw;
+  top: 26em;
+}
+
+@media only screen and (max-width : 1220px) {
+#mcconnell {
+  /*display: none;*/
+  max-width: 50%;
+  min-width: 40%;
+  width: 13vw;
+  top: 26em;
+  left: -50%;
+}
+
+#rubio {
+  /*display: none;*/
+  max-width: 50%;
+  min-width: 40%;
+  width: 15vw;
+  top: 25em;
+  left: 0%;
+}
+
+#bohener {
+  /*display: none;*/
+  max-width: 50%;
+  min-width: 40%;
+  width: 15vw;
+  top: 26em;
+  left: 50%;
+}
+
+#ryan {
+  /*display: none;*/
+  max-width: 50%;
+  min-width: 40%;
+  width: 15vw;
+  left: 100%;
+  top: 26em;
+}
+}
+@media only screen and (max-width : 678px) {
+#mcconnell {
   display: none;
-  max-height: 15em;
-  left: 35em;
-  top: 32em;
+  max-width: 50%;
+  min-width: 40%;
+  width: 13vw;
+  top: 26em;
+  left: -50%;
+}
+
+#rubio {
+  /*display: none;*/
+  max-width: 50%;
+  min-width: 40%;
+  width: 15vw;
+  top: 25em;
+  left: -17%;
+}
+
+#bohener {
+  /*display: none;*/
+  max-width: 50%;
+  min-width: 40%;
+  width: 15vw;
+  top: 26em;
+  left: 30%;
+}
+
+#ryan {
+  /*display: none;*/
+  max-width: 50%;
+  min-width: 40%;
+  width: 15vw;
+  left: 75%;
+  top: 26em;
+}
+}
+@media only screen and (max-width : 375px) {
+#mcconnell {
+  display: none;
+  max-width: 50%;
+  min-width: 40%;
+  width: 13vw;
+  top: 26em;
+  left: -50%;
+}
+
+#rubio {
+  /*display: none;*/
+  max-width: 50%;
+  min-width: 40%;
+  width: 15vw;
+  top: 25em;
+  left: -10%;
+}
+
+#bohener {
+  /*display: none;*/
+  max-width: 50%;
+  min-width: 40%;
+  width: 15vw;
+  top: 26em;
+  left: 30%;
+}
+
+#ryan {
+  /*display: none;*/
+  max-width: 50%;
+  min-width: 40%;
+  width: 15vw;
+  left: 70%;
+  top: 26em;
+}
+}
+
+/*NEXUS6P*/
+@media only screen and (width : 412px) and (height: 732px) {
+#mcconnell {
+  display: none;
+  max-width: 50%;
+  min-width: 40%;
+  width: 13vw;
+  top: 26em;
+  left: -50%;
+}
+
+#rubio {
+  /*display: none;*/
+  max-width: 50%;
+  min-width: 40%;
+  width: 15vw;
+  top: 30em;
+  left: -10%;
+}
+
+#bohener {
+  /*display: none;*/
+  max-width: 50%;
+  min-width: 40%;
+  width: 15vw;
+  top: 31em;
+  left: 30%;
+}
+
+#ryan {
+  /*display: none;*/
+  max-width: 50%;
+  min-width: 40%;
+  width: 15vw;
+  left: 70%;
+  top: 31em;
+}
+}
+/*IPHONE5*/
+@media only screen and (width : 320px) and (height: 568px) {
+#mcconnell {
+  display: none;
+  max-width: 50%;
+  min-width: 40%;
+  width: 13vw;
+  top: 20em;
+  left: -50%;
+}
+
+#rubio {
+  /*display: none;*/
+  max-width: 50%;
+  min-width: 40%;
+  width: 15vw;
+  top: 20em;
+  left: -10%;
+}
+
+#bohener {
+  /*display: none;*/
+  max-width: 50%;
+  min-width: 40%;
+  width: 15vw;
+  top: 20em;
+  left: 30%;
+}
+
+#ryan {
+  /*display: none;*/
+  max-width: 50%;
+  min-width: 40%;
+  width: 15vw;
+  left: 70%;
+  top: 20em;
+}
+}
+/*IPHONE6*/
+@media only screen and (width : 375px) and (height: 667px) {
+#mcconnell {
+  display: none;
+  max-width: 50%;
+  min-width: 40%;
+  width: 13vw;
+  top: 20em;
+  left: -50%;
+}
+
+#rubio {
+  /*display: none;*/
+  max-width: 50%;
+  min-width: 40%;
+  width: 15vw;
+  top: 26em;
+  left: -10%;
+}
+
+#bohener {
+  /*display: none;*/
+  max-width: 50%;
+  min-width: 40%;
+  width: 15vw;
+  top: 27em;
+  left: 30%;
+}
+
+#ryan {
+  /*display: none;*/
+  max-width: 50%;
+  min-width: 40%;
+  width: 15vw;
+  left: 70%;
+  top: 28em;
+}
+}
+/*IPHONE6PLUS*/
+@media only screen and (width : 414px) and (height: 736px) {
+#mcconnell {
+  display: none;
+  max-width: 50%;
+  min-width: 40%;
+  width: 13vw;
+  top: 20em;
+  left: -50%;
+}
+
+#rubio {
+  /*display: none;*/
+  max-width: 50%;
+  min-width: 40%;
+  width: 15vw;
+  top: 30em;
+  left: -10%;
+}
+
+#bohener {
+  /*display: none;*/
+  max-width: 50%;
+  min-width: 40%;
+  width: 15vw;
+  top: 31em;
+  left: 30%;
+}
+
+#ryan {
+  /*display: none;*/
+  max-width: 50%;
+  min-width: 40%;
+  width: 15vw;
+  left: 70%;
+  top: 31em;
+}
+}
+/*IPAD*/
+@media only screen and (width : 768px) and (height: 1024px) {
+#mcconnell {
+  /*display: none;*/
+  max-width: 50%;
+  min-width: 40%;
+  width: 10vw;
+  top: 42em;
+  left: -50%;
+}
+
+#rubio {
+  /*display: none;*/
+  max-width: 50%;
+  min-width: 40%;
+  width: 19vw;
+  top: 43em;
+  left: 0%;
+}
+
+#bohener {
+  /*display: none;*/
+  max-width: 50%;
+  min-width: 40%;
+  width: 19vw;
+  top: 43em;
+  left: 50%;
+}
+
+#ryan {
+  /*display: none;*/
+  max-width: 50%;
+  min-width: 40%;
+  width: 25vw;
+  left: 100%;
+  top: 43em;
+}
 }
 
 
-
-
-/*THIS WORKS!*/
+/*THIS WORKS ON ALL SCREEN SIZES!*/
+/*ALWAYS THERE*/
 
 #trump {
   /*display: none;*/
@@ -350,7 +751,6 @@ a:hover, a:focus {
   width: 10vw;
   left: -23%;
   top: 0;
-  
   }
 }
 
@@ -378,7 +778,7 @@ a:hover, a:focus {
     min-width: 28%;
     width: 10vw;
     top: 3em;
-    left: 210px;
+    left: 210px !important;
   }
 }
 
@@ -388,7 +788,7 @@ a:hover, a:focus {
     min-width: 28%;
     width: 10vw;
     top: 3em;
-    left: 280px;
+    left: 260px;
   }
   #trump {
     max-width: 40%;

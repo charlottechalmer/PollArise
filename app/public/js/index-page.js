@@ -28,3 +28,22 @@ $('.celeb-img img').on('load', function() {
 $('form').submit(function() {
 	$('.loading').addClass('show');
 });
+
+$(document).ready(function() {
+	setTimeout(function() {
+		$('.bottom').addClass('slideOutDown').removeClass('slideInUp');
+	}, 2000);
+	setTimeout(function() {
+		$('#hillz').addClass('slideInLeft').removeClass('hide');
+	}, 2000);
+	setTimeout(function() {
+		$('#palin').addClass('slideInRight').removeClass('hide');
+	}, 2000);
+	setTimeout(function() {
+		$('#hillz').addClass('fadeOutLeftBig').removeClass('slideInLeft');
+	}, 4000);
+	setTimeout(function() {
+		$('#palin').addClass('fadeOutRightBig').removeClass('slideInRight');
+	}, 4000);
+});
+	

@@ -10,6 +10,7 @@
     "codecov": "istanbul cover ./node_modules/mocha/bin/_mocha && codecov"
   },
   "dependencies": {
+    "animate.css": "^3.5.2",
     "body-parser": "^1.15.0",
     "cf-deployment-tracker-client": "0.0.8",
     "express": "^4.13.4",

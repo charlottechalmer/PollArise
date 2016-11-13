@@ -2,6 +2,7 @@ extends ./layout.jade
 
 block extra-header
   link(rel='stylesheet', href='/css/index.css')
+  link(rel="stylesheet", href="/css/animate.css")
 
 block content
   .container
@@ -25,8 +26,6 @@ block content
               img(src='/images/loading.gif', alt='loading')
             .politicianDiv
               img.politicians#obama(src='/SlyngstadCartoons/ObamaEdited.png')      
-              img.politicians#palin(src='/SlyngstadCartoons/PalinEdited.png')
-              img.politicians#hillz(src='/SlyngstadCartoons/HillzEdited.png')
               img.politicians#trump(src='/SlyngstadCartoons/TrumpEdited.png')
               img.politicians#carson(src='/SlyngstadCartoons/BenCarsonEdited.png')
               img.politicians#bernie(src='/SlyngstadCartoons/BernieEdited.png')
@@ -35,16 +34,17 @@ block content
               img.politicians#biden(src='/SlyngstadCartoons/BidenLibertyEdited.png')
               img.politicians#christie(src='/SlyngstadCartoons/Christie3Edited.png')
               img.politicians#bill(src='/SlyngstadCartoons/BillClintonEdited.png')
-              img.politicians#bohener(src='/SlyngstadCartoons/BohenerEdited.png')
               img.politicians#fiorina(src='/SlyngstadCartoons/Fiorinaedited.png')
-              img.politicians#mcconnell(src='/SlyngstadCartoons/McConnellEdited.png')
               img.politicians#pence(src='/SlyngstadCartoons/PenceEdited.png')
               img.politicians#huckabee(src='/SlyngstadCartoons/HuckabeeEdited.png')
               img.politicians#jeb(src='/SlyngstadCartoons/JebBushEdited2.png')
               img.politicians#rand(src='/SlyngstadCartoons/RandPaulEdited.png')
-              img.politicians#rubio(src='/SlyngstadCartoons/Rubio2Edited.png')
-              img.politicians#ryan(src='/SlyngstadCartoons/RyanEdited3.png')
-
+              img.politicians.nextAnimation.animated.hide#palin(src='/SlyngstadCartoons/PalinEdited.png')
+              img.politicians.nextAnimation.animated.hide#hillz(src='/SlyngstadCartoons/HillzEdited.png')
+              img.politicians.bottom.animated.slideInUp#bohener(src='/SlyngstadCartoons/BohenerEdited.png')
+              img.politicians.bottom.animated.slideInUp#rubio(src='/SlyngstadCartoons/Rubio2Edited.png')
+              img.politicians.bottom.animated.slideInUp#ryan(src='/SlyngstadCartoons/RyanEdited3.png')
+              img.politicians.bottom.animated.slideInUp#mcconnell(src='/SlyngstadCartoons/McConnellEdited.png')
     if error
       .row
         .col-md-12
@@ -113,3 +113,7 @@ block footer
 
 block extra-scripts
   script(type='text/javascript', src='/js/index-page.js')
+  script(src="https://code.jquery.com/jquery-1.12.4.js")
+  script(src="https://code.jquery.com/ui/1.12.1/jquery-ui.js")
+
+  
