@@ -31,19 +31,46 @@ $('form').submit(function() {
 
 $(document).ready(function() {
 	setTimeout(function() {
-		$('.bottom').addClass('slideOutDown').removeClass('slideInUp');
+		$('.bottom').addClass('slideInUp').removeClass('hide');
+	}, 500);
+	setTimeout(function() {
+		$('.bottom').addClass('fadeOutDown').removeClass('slideInUp');
 	}, 2000);
 	setTimeout(function() {
 		$('#hillz').addClass('slideInLeft').removeClass('hide');
-	}, 2000);
+	}, 2500);
 	setTimeout(function() {
 		$('#palin').addClass('slideInRight').removeClass('hide');
-	}, 2000);
+	}, 2500);
 	setTimeout(function() {
-		$('#hillz').addClass('fadeOutLeftBig').removeClass('slideInLeft');
-	}, 4000);
+		$('#biden').addClass('slideInLeft').removeClass('hide');
+	}, 3000);
 	setTimeout(function() {
-		$('#palin').addClass('fadeOutRightBig').removeClass('slideInRight');
-	}, 4000);
+		$('#pence').addClass('slideInRight').removeClass('hide');
+	}, 3000);
+	setTimeout(function() {
+		$('#bernie').addClass('slideInUp').removeClass('hide');
+	}, 3000);
+	setTimeout(function() {
+		$('#bill').addClass('slideInUp').removeClass('hide');
+	}, 3000);
+	setTimeout(function() {
+		$('#bernie').addClass('fadeOutDown').removeClass('slideInUp');
+	}, 4500);
+	setTimeout(function() {
+		$('#bill').addClass('fadeOutDown').removeClass('slideInUp');
+	}, 4500);
+	setTimeout(function() {
+		$('#hillz').addClass('fadeOutLeft').removeClass('slideInLeft');
+	}, 4500);
+	setTimeout(function() {
+		$('#palin').addClass('fadeOutRight').removeClass('slideInRight');
+	}, 4500);
+	setTimeout(function() {
+		$('#biden').addClass('fadeOutLeft').removeClass('slideInLeft');
+	}, 4500);
+	setTimeout(function() {
+		$('#pence').addClass('fadeOutRight').removeClass('slideInRight');
+	}, 4500);
 });
 	
