@@ -16,37 +16,35 @@ block content
         h4
           | Enter your Twitter handle to see which politicians are the most similar (and different) to you!
     form(method='post', action='/')
-    .row.twitter-submission
-      .col-md-12
-        .inputDiv
-            span.h3 @
-            input.paragraph.form-control(type='text', value='#{user ? user.screen_name : "" }', name='username', placeholder='your twitter handle...', required)
-            button.button.h4(type='submit') Match me!
-            .loading
-              img(src='/images/loading.gif', alt='loading')
-            .politicianDiv
-              
-              img.politicians#carson(src='/SlyngstadCartoons/BenCarsonEdited.png')
-              img.politicians#cruz(src='/SlyngstadCartoons/CruzEdited4.png')
-              img.politicians#kaine(src='/SlyngstadCartoons/KaineEdited.png') 
-              img.politicians#christie(src='/SlyngstadCartoons/Christie3Edited.png')
-              img.politicians#fiorina(src='/SlyngstadCartoons/Fiorinaedited.png')
-              img.politicians#huckabee(src='/SlyngstadCartoons/HuckabeeEdited.png')
-              img.politicians#jeb(src='/SlyngstadCartoons/JebBushEdited2.png')
-              img.politicians#rand(src='/SlyngstadCartoons/RandPaulEdited.png')
-
-              img.politicians.animated.bounce#obama(src='/SlyngstadCartoons/ObamaEdited.png')     
-              img.politicians.animated.bounce#trump(src='/SlyngstadCartoons/TrumpEdited.png')
-              img.politicians.nextAnimation.animated.hide#biden(src='/SlyngstadCartoons/BidenLibertyEdited.png')
-              img.politicians.nextAnimation.animated.hide#pence(src='/SlyngstadCartoons/PenceEdited.png')
-              img.politicians.nextAnimation.animated.hide#bill(src='/SlyngstadCartoons/BillClintonEdited.png')
-              img.politicians.nextAnimation.animated.hide#bernie(src='/SlyngstadCartoons/BernieEdited.png')
-              img.politicians.nextAnimation.animated.hide#palin(src='/SlyngstadCartoons/PalinEdited.png')
-              img.politicians.nextAnimation.animated.hide#hillz(src='/SlyngstadCartoons/HillzEdited.png')
-              img.politicians.bottom.animated.hide#bohener(src='/SlyngstadCartoons/BohenerEdited.png')
-              img.politicians.bottom.animated.hide#rubio(src='/SlyngstadCartoons/Rubio2Edited.png')
-              img.politicians.bottom.animated.hide#ryan(src='/SlyngstadCartoons/RyanEdited3.png')
-              img.politicians.bottom.animated.hide#mcconnell(src='/SlyngstadCartoons/McConnellEdited.png')
+      .row.twitter-submission
+        .col-md-12
+          .inputDiv
+              span.h3 @
+              input.paragraph.form-control(type='text', value='#{user ? user.screen_name : "" }', name='username', placeholder='your twitter handle...', required)
+              button.button.h4(type='submit') Match me!
+              .loading
+                img(src='/images/loading.gif', alt='loading')
+              .politicianDiv
+                //- img.politicians#carson(src='/SlyngstadCartoons/BenCarsonEdited.png')
+                //- img.politicians#cruz(src='/SlyngstadCartoons/CruzEdited4.png')
+                //- img.politicians#kaine(src='/SlyngstadCartoons/KaineEdited.png') 
+                //- img.politicians#christie(src='/SlyngstadCartoons/Christie3Edited.png')
+                //- img.politicians#fiorina(src='/SlyngstadCartoons/Fiorinaedited.png')
+                //- img.politicians#huckabee(src='/SlyngstadCartoons/HuckabeeEdited.png')
+                //- img.politicians#jeb(src='/SlyngstadCartoons/JebBushEdited2.png')
+                //- img.politicians#rand(src='/SlyngstadCartoons/RandPaulEdited.png')
+                img.politicians.animated.bounce#obama(src='/SlyngstadCartoons/ObamaEdited.png')     
+                img.politicians.animated.bounce#trump(src='/SlyngstadCartoons/TrumpEdited.png')
+                img.politicians.nextAnimation.animated.hide#biden(src='/SlyngstadCartoons/BidenLibertyEdited.png')
+                img.politicians.nextAnimation.animated.hide#pence(src='/SlyngstadCartoons/PenceEdited.png')
+                img.politicians.nextAnimation.animated.hide#bill(src='/SlyngstadCartoons/BillClintonEdited.png')
+                img.politicians.nextAnimation.animated.hide#bernie(src='/SlyngstadCartoons/BernieEdited.png')
+                img.politicians.nextAnimation.animated.hide#palin(src='/SlyngstadCartoons/PalinEdited.png')
+                img.politicians.nextAnimation.animated.hide#hillz(src='/SlyngstadCartoons/HillzEdited.png')
+                img.politicians.bottom.animated.hide#bohener(src='/SlyngstadCartoons/BohenerEdited.png')
+                img.politicians.bottom.animated.hide#rubio(src='/SlyngstadCartoons/Rubio2Edited.png')
+                img.politicians.bottom.animated.hide#ryan(src='/SlyngstadCartoons/RyanEdited3.png')
+                img.politicians.bottom.animated.hide#mcconnell(src='/SlyngstadCartoons/McConnellEdited.png')
     if error
       .row
         .col-md-12
