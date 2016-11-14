@@ -19,7 +19,9 @@
 
 var express     = require('express'),
   app           = express(),
-  config        = require('./config/config'),
+  mongoose_config = process.env.MONGODB_URI ? process.env.MONGODB_URI : require('./config/config').mongodb,
+  twitter_config = process.env.TWITTER ? JSON.parse(process.env.TWITTER) : require('./config/config').twitter,
+  insights_config = process.env.INSIGHTS ? JSON.parse(process.env.INSIGHTS) : require('./config/config').insights,
   mongoose      = require('mongoose'),
   watson        = require('watson-developer-cloud'),
   TwitterHelper = require('./app/util/twitter-helper');
@@ -39,7 +41,7 @@ var connect = function () {
     server: { socketOptions: { keepAlive: 1, connectTimeoutMS: 30000 } },
     replset: { socketOptions: { keepAlive: 1, connectTimeoutMS : 30000 } }
   };
-  mongoose.connect(config.mongodb, options);
+  mongoose.connect(mongoose_config, options);
 };
 connect();
 
@@ -51,10 +53,10 @@ mongoose.connection.on('disconnected', connect);
 require('./config/express')(app);
 
 // Create the twitter helper
-var twit = new TwitterHelper(config.twitter);
+var twit = new TwitterHelper(twitter_config);
 
 // Create the personality insights service
-var personality_insights = new watson.personality_insights(config.personality_insights);
+var personality_insights = new watson.personality_insights(insights_config);
 
 // Make the services accessible to the router
 app.use(function(req,res,next){

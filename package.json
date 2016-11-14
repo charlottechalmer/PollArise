@@ -1,7 +1,7 @@
 {
-  "name": "your-celebrity-match",
+  "name": "poll-arise",
   "version": "2.3.0",
-  "description": "your-celebrity-match uses the Personality Insights service to find a celebrity similar to you based off of your online presence",
+  "description": "Poll Arise uses the Personality Insights service to find a politician similar to you based off of your online presence",
   "private": true,
   "scripts": {
     "start": "node server.js",
@@ -41,6 +41,10 @@
     {
       "name": "Jeff Stylos",
       "email": "jsstylos@us.ibm.com"
+    },
+    {
+      "name": "Charlotte Taylor",
+      "email": "charlotte.taylor7693@gmail.com"
     }
   ],
   "license": "Apache-2.0",
@@ -49,7 +53,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/watson-developer-cloud/your-celebrity-match.git"
+    "url": "https://github.com/charlottechalmer/PollArise.git"
   },
   "engines": {
     "node": ">=4.3.0"
