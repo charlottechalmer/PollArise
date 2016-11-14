@@ -12,4 +12,4 @@ applications:
   path: .
   memory: 512M
   env:
-    DEMO: 1
+    DEMO: 0

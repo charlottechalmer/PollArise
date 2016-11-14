@@ -53,6 +53,7 @@ mongoose.connection.on('disconnected', connect);
 require('./config/express')(app);
 
 // Create the twitter helper
+
 var twit = new TwitterHelper(twitter_config);
 
 // Create the personality insights service
