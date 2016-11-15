@@ -659,23 +659,23 @@ a:hover, a:focus {
   #mcconnell {
   /*display: none;*/
 
-  top: 14em !important;
+  top: 13em !important;
 
 }
 
 #rubio {
   /*display: none;*/
-  top: 13em !important;
+  top: 12em !important;
 }
 
 #bohener {
   /*display: none;*/
-  top: 14em !important;
+  top: 13em !important;
 }
 
 #ryan {
   /*display: none;*/
-  top: 14em !important;
+  top: 13em !important;
 }
 }
 
@@ -1029,146 +1029,6 @@ a:hover, a:focus {
     top: 4em;
   }
 }
-
-/* Large Devices, Wide Screens (macbook pro 15in 1440 x 900) */
-/*@media only screen and (max-width : 1440px) {
-#bernie {
-  max-width: 100%;
-  height: auto;
-  width: auto/9;
-  left: 0em;
-  top: 11em;
-}
-
-#biden {
-  top: 25em;
-  left: 57em;
-  max-height: 19em;
-}
-
-#bill {
-  max-height: 17em;
-  left: 15em;
-  top: 3em;
-}
-
-#bohener {
-  max-height: 14em;
-  top: 32em;
-  left: 1em;
-}
-
-#carson {
-  max-height: 21em;
-  left: -20em;
-  top: 12em; 
-}
-
-#christie {
-  max-height: 13em;
-  left: 57em;
-  top: 6em;
-}
-
-#cruz {
-  max-height: 12em;
-  left: 13em;
-  top: 28em;  
-}
-
-#fiorina{
-  max-height: 15em;
-  left: 29em;
-  top: 21em;
-}
-
-#hillz {
-  max-height: 13em;
-  left: -36em;
-  top: -1em;
-}
-
-#huckabee {
-  max-height: 19em;
-  left: 47em;
-  top: 22em;
-}
-
-#jeb {
-  max-height: 15em;
-  left: -45em;
-  top: 7em;
-}
-
-#kaine {
-  max-height: 15em;
-  left: 38em;
-  top: 7em;
-}
-
-#mcconnell {
-  max-height: 15em;
-  top: 27em;
-  left: -38em;
-}
-
-#obama {
-  max-height: 18em;
-  top: -3em;
-  left: 29em;
-}
-#palin {
-  max-height: 18em;
-  left: 46em;
-  top: -4em;
-}
-#pence {
-  max-height: 20em;
-  left: -9em;
-  top: 21em;
-}
-
-#rand {
-  max-height: 22em;
-  left: -32em;
-  top: 14em; 
-}
-
-#rubio {
-  max-height: 16em;
-  top: 28em;
-  left: -27em;
-}
-#ryan {
-  max-height: 12em;
-  left: 35em;
-  top: 32em;
-}
-#trump {
-  max-height: 20em;
-  left: -13em;
-  top: -3em;
-}
-}
-
-/* Medium Devices, Desktops */
-/*@media only screen and (max-width : 992px) {
-}
-*/
-/* Small Devices, Tablets */
-/*@media only screen and (max-width : 768px) {
-
-}*/
-
-/* Extra Small Devices, Phones */ 
-/*@media only screen and (max-width : 480px) {
-
-}*/
-
-/* Custom, iPhone Retina */ 
-/*@media only screen and (max-width : 320px) {
-
-}*/
 
 /**
 * Media Queries
