@@ -33,6 +33,7 @@ a:hover, a:focus {
 .img-container img {
   width: 100%;
   height: auto;
+  margin-top: -2em;
 }
 
 .img-container.main-logo {
@@ -45,6 +46,7 @@ a:hover, a:focus {
   width: 100%;
   max-width: 27rem;
   margin: 0px auto;
+  margin-top: -2em;
 }
 
 .twitter-submission {
@@ -117,7 +119,7 @@ a:hover, a:focus {
 
 .extra-links {
   text-align: center;
-  margin-top: 1.5rem;
+  margin-top: 0.5rem;
   margin-bottom: 1.5rem;
 }
 

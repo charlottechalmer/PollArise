@@ -17,14 +17,14 @@
 
 'use strict';
 
-var express     = require('express'),
-  app           = express(),
-  mongoose_config = process.env.MONGODB_URI ? process.env.MONGODB_URI : require('./config/config').mongodb,
-  twitter_config = process.env.TWITTER ? JSON.parse(process.env.TWITTER) : require('./config/config').twitter,
-  insights_config = process.env.INSIGHTS ? JSON.parse(process.env.INSIGHTS) : require('./config/config').insights,
-  mongoose      = require('mongoose'),
-  watson        = require('watson-developer-cloud'),
-  TwitterHelper = require('./app/util/twitter-helper');
+var express        = require('express'),
+  app              = express(),
+  mongoose_config  = process.env.MONGODB_URI ? process.env.MONGODB_URI : require('./config/config').mongodb,
+  twitter_config   = process.env.TWITTER ? JSON.parse(process.env.TWITTER) : require('./config/config').twitter,
+  insights_config  = process.env.INSIGHTS ? JSON.parse(process.env.INSIGHTS) : require('./config/config').insights,
+  mongoose         = require('mongoose'),
+  watson           = require('watson-developer-cloud'),
+  TwitterHelper    = require('./app/util/twitter-helper');
 
 
 
