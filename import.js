@@ -1,7 +1,7 @@
 
 var exec = require("child_process").exec;
 var mongoose = require('mongoose');
-mongoose.connect("mongodb://localhost/celebs");
+mongoose.connect("mongodb://heroku_3s8krnvz:uk0hbagqb4ve7e9euegji3lkdk@ds153677.mlab.com:53677/heroku_3s8krnvz");
 var Profile = require('./app/models/profile.js');
 
 var politicians = [
@@ -64,18 +64,31 @@ var politicians = [
 ];
 
 var port = process.env.PORT || 3000;
-for (var p of politicians) {
-	exec('curl --data "" http://localhost:'+port+'/celebrities/add/@' + p[0], function(error) {
+for (var p in politicians) {
+	exec('curl --data "" https://poll-arise.herokuapp.com/celebrities/add/@' + politicians[p][0].toLowerCase(), function(error) {
 		if (error) {
-			console.log("error");
+			console.log(error);
 		}
-		Profile.findOneAndUpdate({username: p[0].toLowerCase()}, {$set: {"politicalParty": p[1]}}, {upsert: true}, (err, data) => {
+		Profile.findOneAndUpdate({username: politicians[p][0].toLowerCase()}, {$set: {"politicalParty": politicians[p][1]}}, {upsert: true}, (err, data) => {
 			if (err) {
 				console.log(err);
-			}
-			console.log("updated");
+			}	
 		});
-	
-	// 	//GO INTO MONGOOSE AND UPDATE PERSON's POLITICAL AFFILIATION (p[1]) findOneAndUpdate
 	});
+	console.log("updated");
 }
+
+Profile.find({}, (err, data) => {
+	data.forEach(function(obj) {
+		var politicalParty;
+		for(var p of politicians) {
+			if (p[0].toLowerCase() === obj.username) {
+				politicalParty = p[1];
+				break;
+			}
+		}
+		Profile.update({username: obj.username}, {$set: {"politicalParty": politicalParty}}, {new: true}, (err, data) => {
+			console.log("updated politicalParty");
+		});
+	});
+})
