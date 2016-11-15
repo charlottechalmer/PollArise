@@ -134,7 +134,7 @@ block content
                     img(title='Compare me to #{c.user.name}', alt='#{c.user.name} picture', src='#{c.user.image}',id='d_#{index}')
                   h5 #{c.user.name}
     script(type='text/javascript').
-      var twitter_config = process.env.TWITTER ? JSON.parse(process.env.TWITTER) : require('./config/config').twitter,
+      var twitter_config = process.env.TWITTER ? JSON.parse(process.env.TWITTER) : require('./config/config').twitter;
       var similar_personalities =!{JSON.stringify(similar_personalities)};
       var different_personalities =!{JSON.stringify(different_personalities)};
       var similar_needs =!{JSON.stringify(similar_needs)};
