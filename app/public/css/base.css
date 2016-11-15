@@ -88,7 +88,7 @@ button.button, a.button {
 .top-nav .app-icon {
   margin: 0px auto;
   width: 210px;
-  height: 36px;
+  height: auto;
 }
 .top-nav .app-icon img {
   width: 100%;

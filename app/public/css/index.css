@@ -665,17 +665,17 @@ a:hover, a:focus {
 
 #rubio {
   /*display: none;*/
-  top: 10em !important;
+  top: 12em !important;
 }
 
 #bohener {
   /*display: none;*/
-  top: 11em !important;
+  top: 13em !important;
 }
 
 #ryan {
   /*display: none;*/
-  top: 11em !important;
+  top: 13em !important;
 }
 }
 
@@ -685,7 +685,7 @@ a:hover, a:focus {
   max-width: 50%;
   min-width: 40%;
   width: 13vw;
-  top: 18em;
+  top: 16em;
   left: -20vw;
 }
 
@@ -694,7 +694,7 @@ a:hover, a:focus {
   max-width: 50%;
   min-width: 40%;
   width: 15vw;
-  top: 19em;
+  top: 17em;
   left: -3vw;
 }
 
@@ -703,7 +703,7 @@ a:hover, a:focus {
   max-width: 50%;
   min-width: 40%;
   width: 15vw;
-  top: 20em;
+  top: 17em;
   left: 15vw;
 }
 
@@ -713,7 +713,7 @@ a:hover, a:focus {
   min-width: 40%;
   width: 15vw;
   left: 34vw;
-  top: 20em;
+  top: 17em;
 }
 }
 
@@ -998,7 +998,7 @@ a:hover, a:focus {
   /*display: none;*/
   max-width: 38%;
   min-width: 28%;
-  width: 10vw;
+  width: 9vw;
   top: -2em;
   left: 360px;
 }
@@ -1007,7 +1007,7 @@ a:hover, a:focus {
   #obama {
     max-width: 38%;
     min-width: 28%;
-    width: 10vw;
+    width: 9vw;
     top: 3em;
     left: 210px !important;
   }
@@ -1017,7 +1017,7 @@ a:hover, a:focus {
   #obama {
     max-width: 38%;
     min-width: 28%;
-    width: 10vw;
+    width: 9vw;
     top: 3em;
     left: 260px;
   }
