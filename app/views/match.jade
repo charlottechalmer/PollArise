@@ -134,7 +134,6 @@ block content
                     img(title='Compare me to #{c.user.name}', alt='#{c.user.name} picture', src='#{c.user.image}',id='d_#{index}')
                   h5 #{c.user.name}
     script(type='text/javascript').
-      var twitter_config = process.env.TWITTER ? JSON.parse(process.env.TWITTER) : require('./config/config').twitter;
       var similar_personalities =!{JSON.stringify(similar_personalities)};
       var different_personalities =!{JSON.stringify(different_personalities)};
       var similar_needs =!{JSON.stringify(similar_needs)};
@@ -146,8 +145,8 @@ block content
           twitter:{
             accounts: ['@BarackObama', '@realDonaldTrump', '@mike_pence', '@HillaryClinton', '@timkaine', '@SenJohnMcCain', '@GovGaryJohnson', '@algore', '@Schwarzenegger', '@SarahPalinUSA', '@RepRonPaul', '@RalphNader', '@glennbeck', '@JohnKerry', '@MicheleBachmann', '@MittRomney', '@MikeBloomberg', '@JoeBiden', '@SenSanders', '@DrJillStein', '@RandPaul', '@CoryBooker', '@SpeakerRyan', '@BobbyJindal', '@NancyPelosi', '@GovMikeHuckabee', '@JebBush', '@BernieSanders', '@newtgingrich', '@GovernorPerry', '@SpeakerBoehner', '@KarlRove', '@SenatorReid', '@JerryBrownGov', '@JimDeMint', '@EricCantor', '@jasoninthehouse', '@DarrellIssa', '@GabbyGiffords', '@ScottWalker', '@AllenWest', '@clairecmc', '@SenWarren', '@ChuckGrassley', '@NYCMayor', '@THEHermanCain', '@alfranken', '@SenGillibrand', '@MartinOMalley', '@RickSantorum', '@ChrisChristie', '@tedcruz', '@senatemajldr'],                      
           limit: 1,                                   //Integer: max number of tweets to load
-          consumer_key: twitter_config.consumer_key,         //String: consumer key. make sure to have your app read-only
-          consumer_secret: twitter_config.consumer_secret //String: consumer secret key. make sure to have your app read-only
+          consumer_key: "ano0hWwr3tdqKYT7xb6UEGK9R",         //String: consumer key. make sure to have your app read-only
+          consumer_secret: " OmIx30WlbVBGbq8S41HoF7tw7O0bnJDMaDqVYdpPAvgTbS6kLh" //String: consumer secret key. make sure to have your app read-only
           },
           length:200,                                     //Integer: For posts with text longer than this length, show an ellipsis.
           show_media:true,                                //Boolean: if false, doesn't display any post images
