@@ -105,6 +105,10 @@
     color: #808080;
 }
 
+.noShadow {
+    box-shadow: none;
+}
+
 .social-feed-element{
     margin-left: 0;
     transition: 0.25s;
