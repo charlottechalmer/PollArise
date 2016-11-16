@@ -61,7 +61,7 @@ block content
         .social-feed-header(style='display:none')
           i.fa.fa-twitter.fa-2x
           h2 Politician Twitter Feed
-        button(disabled='disabled').showTweetFeed Loading Twitter Feed...
+        button(disabled='disabled').showTweetFeed Loading...
 
     .row.how-you-match-label
       .col-md-12
@@ -169,7 +169,7 @@ block content
             return  (content.text) ? content.text.indexOf('fuck') == -1 : true;
           },
           callback: function() {                          //Function: This is a callback function which is evoked when all the posts are collected and displayed
-            $('.showTweetFeed').prop("disabled", false).text('Show Twitter Feed')
+            $('.showTweetFeed').prop("disabled", false).text("Politician's Tweets ")
             console.log("All posts collected!");
           }
         });
