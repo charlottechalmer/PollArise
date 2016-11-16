@@ -8,8 +8,6 @@ block extra-header
   link(rel='stylesheet', href='/css/twitterFeed.css')
   link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css')
   //- link(href="../bower_components/social-feed/css/jquery.socialfeed.css" rel="stylesheet" type="text/css")
-
-
 block extra-scripts
   script(type='text/javascript', src='/js/page.js')
   script(src="../bower_components/codebird-js/codebird.js")
@@ -56,15 +54,16 @@ block content
       .col-md-8.col-md-offset-2#moveCol
         .panel-main
           include ./match-panel.jade
-      .social-feed-header.col-md-4(style='display:none')
+      
+      .social-feed-element.col-md-2#makeBigger
+        .social-feed-header(style='display:none')
           i.fa.fa-twitter.fa-2x
           h2 Politician Twitter Feed
-      .social-feed-element.noShadow.col-md-2#makeBigger
         button(disabled='disabled').showTweetFeed.loading Loading Tweets
 
     .row.how-you-match-label
       .col-md-12
-        p How you match up against other politicians:
+        p How you match up against other politicans:
 
     .row.other-celebs
       .col-md-6.most-similar
@@ -174,7 +173,6 @@ block content
         });
         $('.showTweetFeed').click(function() {
           $('.showTweetFeed').hide();
-          $('.social-feed-element').removeClass('noShadow');
           $('.social-feed-header').css({"display": "block"});
           $('#makeBigger').removeClass('col-md-2').addClass('col-md-4');
           $('#moveCol').removeClass('col-md-offset-2');
