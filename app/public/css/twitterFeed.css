@@ -110,7 +110,7 @@
     transition: 0.25s;
     -webkit-backface-visibility: hidden;
     margin:-1px;
-    margin-top: -1em;
+    margin-top: -1.5em;
     background-color: #fff;
     color: #333;
     text-align:left;
@@ -183,18 +183,20 @@
 .social-feed-header {
     text-align: center;
     padding-bottom: .5em;
-    margin-top: -1em;
+    margin-bottom: 1em;
+    margin-top: -1.2em;
 }
 
 .social-feed-header h2 {
     font-family: "Cabin", Helvetica, Arial, sans-serif !important;
-    font-size: 1.5em;
+    font-size: 1.2em;
     color: rgb(85, 172, 238);
     display: inline-block;
 }
 
 .social-feed-header i {
     padding-right: 5px;
+    font-size: 1.3em;
     color: rgb(85, 172, 238);
     display: inline-block;
 }
