@@ -56,12 +56,12 @@ block content
           include ./match-panel.jade
       
       
-      .col-md-2#makeBigger
-        .social-feed-header(style='display:none')
-          i.fa.fa-twitter.fa-2x
-          h2 Politician Twitter Feed
-        .social-feed-element
-          button(disabled='disabled').showTweetFeed.loading Loading Tweets
+
+      .social-feed-header(style='display:none')
+        i.fa.fa-twitter.fa-2x
+        h2 Politician Twitter Feed
+      .social-feed-element.col-md-2#makeBigger
+        button(disabled='disabled').showTweetFeed.loading Loading Tweets
 
     .row.how-you-match-label
       .col-md-12
