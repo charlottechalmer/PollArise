@@ -59,7 +59,7 @@ block content
       .social-feed-header.col-md-4(style='display:none')
           i.fa.fa-twitter.fa-2x
           h2 Politician Twitter Feed
-      .social-feed-element.col-md-2#makeBigger
+      .social-feed-element.noShadow.col-md-2#makeBigger
         button(disabled='disabled').showTweetFeed.loading Loading Tweets
 
     .row.how-you-match-label
@@ -174,6 +174,7 @@ block content
         });
         $('.showTweetFeed').click(function() {
           $('.showTweetFeed').hide();
+          $('.social-feed-element').removeClass('noShadow');
           $('.social-feed-header').css({"display": "block"});
           $('#makeBigger').removeClass('col-md-2').addClass('col-md-4');
           $('#moveCol').removeClass('col-md-offset-2');
