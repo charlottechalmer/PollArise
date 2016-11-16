@@ -105,7 +105,7 @@
 }
 
 .social-feed-element{
-    box-shadow: 0 0 10px 0 rgba(10, 10, 10, 0.2);
+    margin-left: 0;
     transition: 0.25s;
     -webkit-backface-visibility: hidden;
     margin:-1px;
@@ -116,7 +116,6 @@
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     line-height: 16px;
     max-height: 465px;
-    max-width: 25%;
 	overflow-y: scroll !important;
 }
 .social-feed-element img.pull-left {
@@ -147,7 +146,8 @@
     background-color: rgba(85, 172, 238, 0.07);
 }
 .social-feed-element .social-feed-header {
-    font: 1.5em "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1.5em;
     color: rgb(85, 172, 238);
     text-align: center;
     text-shadow: 0 1px 3px rgba(0,0,0,0.15);
