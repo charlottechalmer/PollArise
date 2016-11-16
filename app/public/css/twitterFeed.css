@@ -175,18 +175,19 @@
     }
 
 }
-.social-feed-element .social-feed-header {
+.social-feed-header {
     text-align: center;
+    padding-bottom: .5em;
 }
 
-.social-feed-element .social-feed-header h2 {
+.social-feed-header h2 {
     font-family: "Cabin", Helvetica, Arial, sans-serif !important;
     font-size: 1.5em;
     color: rgb(85, 172, 238);
     display: inline-block;
 }
 
-.social-feed-element .social-feed-header i {
+.social-feed-header i {
     padding-right: 5px;
     color: rgb(85, 172, 238);
     display: inline-block;
