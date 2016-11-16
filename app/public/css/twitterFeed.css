@@ -115,6 +115,8 @@
     color: #333;
     text-align:left;
     font-size: 14px;
+    box-shadow: inset 0 1px 0.5px lightgrey;
+    border-radius: 5px;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     line-height: 16px;
     max-height: 485px;
@@ -181,6 +183,7 @@
 .social-feed-header {
     text-align: center;
     padding-bottom: .5em;
+    margin-top: -1em;
 }
 
 .social-feed-header h2 {
