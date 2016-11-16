@@ -120,6 +120,17 @@
     max-height: 485px;
 	overflow-y: scroll !important;
 }
+
+.social-feed-element::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 7px;
+}
+.social-feed-element::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0,0,0,.5);
+    box-shadow: 0 0 1px rgba(255,255,255,.5);
+}
+
 .social-feed-element img.pull-left {
     border-radius: 50%;
     height: 3em;
@@ -217,8 +228,8 @@
   overflow: hidden;
   display: inline-block;
   vertical-align: bottom;
-  -webkit-animation: ellipsis steps(4,end) 1300ms infinite;      
-  animation: ellipsis steps(4,end) 1300ms infinite;
+  -webkit-animation: ellipsis steps(5,end) 1300ms infinite;      
+  animation: ellipsis steps(5,end) 1300ms infinite;
   content: "\2026"; /* ascii code for the ellipsis character */
   width: 0px;
 }
