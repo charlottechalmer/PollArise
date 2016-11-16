@@ -225,13 +225,14 @@
     width: 11em ;
 }
 .loading:after {
-  overflow: hidden;
-  display: inline-block;
-  vertical-align: bottom;
-  -webkit-animation: ellipsis steps(5,end) 1300ms infinite;      
-  animation: ellipsis steps(5,end) 1300ms infinite;
-  content: "\2026"; /* ascii code for the ellipsis character */
-  width: 0px;
+    font-size: 1.25em;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: bottom;
+    -webkit-animation: ellipsis steps(5,end) 1300ms infinite;      
+    animation: ellipsis steps(5,end) 1300ms infinite;
+    content: "\2026"; /* ascii code for the ellipsis character */
+    width: 0px;
 }
 
 @keyframes ellipsis {
