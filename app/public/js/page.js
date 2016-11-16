@@ -55,7 +55,18 @@ function displayCelebrity(celebrity) {
       colorText.css({color: "3D3D3D"});
       colorElem.css({backgroundColor: "3D3D3D", color: "3D3D3D", borderColor: "3D3D3D"});
     }
-
+    var overlay = $('.overlay');
+      if (party === 'Republican') {
+        overlay.addClass('overlay-red');
+      } else if (party === 'Democratic') {
+        overlay.addClass('overlay-blue');
+      } else if (party === 'Libertarian') {
+        overlay.addClass('overlay-yellow');
+      } else if (party === 'Green Party') {
+        overlay.addClass('overlay-green');
+      } else if (party === 'Independent') {
+        overlay.addClass('overlay-grey');
+      }
   // Update traits
   var idType;
   if (currentType === PERSONALITY) idType = '#personality_trait_';
