@@ -109,6 +109,7 @@
     transition: 0.25s;
     -webkit-backface-visibility: hidden;
     margin:-1px;
+    margin-top: -1em;
     background-color: #fff;
     color: #333;
     text-align:left;
@@ -178,7 +179,7 @@
     display: inline-block;
     width: 25em;
     font-size: 80%;
-    margin-left: 5.5em;
+    margin-left: 4.75em;
 }
 
 .social-feed-element .showTweetFeed {
