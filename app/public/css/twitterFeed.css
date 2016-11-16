@@ -117,7 +117,7 @@
     font-size: 14px;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     line-height: 16px;
-    max-height: 465px;
+    max-height: 485px;
 	overflow-y: scroll !important;
 }
 .social-feed-element img.pull-left {
@@ -217,8 +217,8 @@
   overflow: hidden;
   display: inline-block;
   vertical-align: bottom;
-  -webkit-animation: ellipsis steps(4,end) 900ms infinite;      
-  animation: ellipsis steps(4,end) 900ms infinite;
+  -webkit-animation: ellipsis steps(4,end) 1300ms infinite;      
+  animation: ellipsis steps(4,end) 1300ms infinite;
   content: "\2026"; /* ascii code for the ellipsis character */
   width: 0px;
 }
