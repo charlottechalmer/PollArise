@@ -123,6 +123,7 @@
     height: 3em;
     width: 3em;
     margin: 1em 1em 2.75em 0;
+    opacity: 1;
 }
 
 .social-feed-element .content{
@@ -145,7 +146,7 @@
     color: #000;
     background-color: rgba(85, 172, 238, 0.07);
 }
-.social-feed-element .social-feed-header {
+.social-feed-element .social-feed-header h2 {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 1.5em;
     color: rgb(85, 172, 238);
@@ -154,7 +155,10 @@
 }
 
 .social-feed-element .social-feed-header i {
+    text-align: center;
     padding-right: 5px
+    color: rgb(85, 172, 238);
+
 }
 
 .social-feed-element .twitter-post h4 {
@@ -175,7 +179,7 @@
     display: inline-block;
     width: 25em;
     font-size: 80%;
-    margin-left: 6em;
+    margin-left: 5.5em;
 }
 
 .social-feed-element .showTweetFeed {
