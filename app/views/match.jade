@@ -169,12 +169,12 @@ block content
             return  (content.text) ? content.text.indexOf('fuck') == -1 : true;
           },
           callback: function() {                          //Function: This is a callback function which is evoked when all the posts are collected and displayed
-            $('.showTweetFeed').prop("disabled", false).text("Politician's Tweets ")
+            $('.showTweetFeed').removeClass('loading').prop("disabled", false).text("Politician's Tweets ")
             console.log("All posts collected!");
           }
         });
         $('.showTweetFeed').click(function() {
-          $('.showTweetFeed').hide().removeClass('loading');
+          $('.showTweetFeed').hide();
           $('.social-feed-header').css({"display": "block"});
           $('#makeBigger').removeClass('col-md-2').addClass('col-md-4');
           $('#moveCol').removeClass('col-md-offset-2');

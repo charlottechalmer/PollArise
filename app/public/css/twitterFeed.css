@@ -208,6 +208,7 @@
     background-color: rgba(85, 172, 238, 0.9);
 }
 .social-feed-element .showTweetFeed:disabled {
+    text-align: left;
     color: #999;
     background-color: rgba(228, 41, 41, 0.2);
     width: 11em ;
