@@ -175,8 +175,9 @@
     }
     .social-feed-element .showTweetFeed {
     margin: 10px -5px 10px -14px !important;
-
+    }
 }
+
 .social-feed-header {
     text-align: center;
     padding-bottom: .5em;
