@@ -160,7 +160,7 @@
     background-color: rgba(85, 172, 238, 0.07);
 }
 
-@media screen and (min-width: 769px) and (max-width: 992px) {
+@media screen and (min-width: 992px) and (max-width: 1199px) {
     .social-feed-element .twitter-post h4 {
         display: block;
     }
