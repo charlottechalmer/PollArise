@@ -174,7 +174,7 @@ block content
           }
         });
         $('.showTweetFeed').click(function() {
-          $('.showTweetFeed').hide();
+          $('.showTweetFeed').hide().removeClass('loading');
           $('.social-feed-header').css({"display": "block"});
           $('#makeBigger').removeClass('col-md-2').addClass('col-md-4');
           $('#moveCol').removeClass('col-md-offset-2');
