@@ -160,6 +160,23 @@
     background-color: rgba(85, 172, 238, 0.07);
 }
 
+@media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+    .social-feed-element .twitter-post h4 {
+        display: block;
+    }
+    .social-feed-element .twitter-post h6 {
+        padding-top: 0.3em;
+        display: block;
+        float: none !important !important;
+    }
+    .social-feed-element .viewTweet {
+        margin-left: -2em;
+    }
+    .social-feed-element p {
+        margin: 2px 0 0 0;
+    }
+
+}
 .social-feed-element .social-feed-header {
     text-align: center;
 }
