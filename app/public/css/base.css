@@ -97,8 +97,8 @@ button.button, a.button {
 }
 .top-nav .home-link {
   position: absolute;
-  right: 150px;
-  top: 15px;
+  right: 20px;
+  top: 16px;
 }
 .top-nav .home-link a {
   color: #bbbdbf;
