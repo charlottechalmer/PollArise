@@ -39,30 +39,40 @@ function displayCelebrity(celebrity) {
   var party = celebrity.user.politicalParty;
   var colorText = $(".cel_name, .matchdiv a, .matchdiv p");
   var colorElem = $(".left-bar, .celebrity .third-border, .celebrity .avatar, .celebrityp");
-  var overlay = $('.overlay');
     if (party === "Republican") {
       colorText.css({color: "#D40000"});
-      colorElem.css({backgroundColor: "D40000", color: "D40000", borderColor: "D40000"});
-      overlay.addClass('overlay-red'); 
+      colorElem.css({backgroundColor: "D40000", color: "D40000", borderColor: "D40000"});  
     } else if (party === "Democratic") {
       colorText.css({color: "0098ff"});
       colorElem.css({backgroundColor: "0098ff", color: "0098ff", borderColor: "0098ff"});
-      overlay.addClass('overlay-blue');
     } else if (party === "Libertarian") {
       colorText.css({color: "FFCB00"});
-      colorElem.css({backgroundColor: "FFCB00", color: "FFCB00", borderColor: "FFCB00"})
-      overlay.addClass('overlay-yellow');;
+      colorElem.css({backgroundColor: "FFCB00", color: "FFCB00", borderColor: "FFCB00"});
     } else if (party === "Green Party") {
       colorText.css({color: "038F19"});
       colorElem.css({backgroundColor: "038F19", color: "038F19", borderColor: "038F19"});
-      overlay.addClass('overlay-green');
     } else if (party === "Independent") {
       colorText.css({color: "3D3D3D"});
       colorElem.css({backgroundColor: "3D3D3D", color: "3D3D3D", borderColor: "3D3D3D"});
-      overlay.addClass('overlay-grey');
-
     }
+    // var repub = ['realdonaldtrump', 'mike_pence', 'SenJohnMcCain', 'Schwarzenegger', 'SarahPalinUSA', 'glennbeck', 'BobbyJindal', 'MicheleBachmann', 'MittRomney', 'RandPaul', 'SpeakerRyan', 'GovMikeHuckabee', 'JebBush', 'newtgingrich', 'GovernorPerry', 'SpeakerBoehner', 'KarlRove', 'JimDeMint', 'EricCantor', 'jasoninthehouse', 'DarrellIssa','ScottWalker', 'AllenWest', 'ChuckGrassley', 'THEHermanCain', 'RickSantorum', 'ChrisChristie', 'tedcruz', 'SenateMajLdr', 'CondoleezzaRice',];
+    // var democ = ['BarackObama', 'HillaryClinton', 'timkaine', 'algore', 'JohnKerry', 'JoeBiden', 'SenSanders', 'CoryBooker', 'NancyPelosi', 'BernieSanders', 'SenatorReid', 'JerryBrownGov', 'GabbyGiffords', 'clairecmc', 'SenWarren', 'NYCMayor', 'alfranken', 'SenGillibrand', 'MartinOMalley', 'MichelleObama', 'madeleine',];
+    // var liber = ['GovGaryJohnson', 'RepRonPaul'];
+    // var green = ['RalphNader', 'DrJillStein'];
+    // var indep = ['MikeBloomberg'];
 
+    var overlay = $('.overlay');
+      if (party === 'Republican') {
+        $(this).addClass('overlay-red');
+      } else if (party === 'Democratic') {
+        $(this).addClass('overlay-blue');
+      } else if (party === 'Libertarian') {
+        $(this).addClass('overlay-yellow');
+      } else if (party === 'Green Party') {
+        $(this).addClass('overlay-green');
+      } else if (party === 'Independent') {
+        $(this).addClass('overlay-grey');
+      }
   // Update traits
   var idType;
   if (currentType === PERSONALITY) idType = '#personality_trait_';
