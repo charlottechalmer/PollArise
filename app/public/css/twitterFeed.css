@@ -181,6 +181,7 @@
 .social-feed-element .viewTweet{
     display: inline-block;
     width: 25em;
+    font-size: 80%;
     margin-left: 4.75em;
 }
 
@@ -197,6 +198,7 @@
     border-top-color: #eee;
     border-bottom-color: #bbb;
     box-shadow: 1px 1px 3px rgba(0,0,0,0.15);;
+    font-family: 'Cabin';
 }
 
 .social-feed-element .showTweetFeed:hover {
@@ -204,7 +206,6 @@
 }
 .social-feed-element .showTweetFeed:disabled {
     color: #999;
-    font-size: 83%;
     background-color: rgba(228, 41, 41, 0.2);
 }
 
