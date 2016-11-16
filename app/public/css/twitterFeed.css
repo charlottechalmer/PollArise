@@ -110,15 +110,17 @@
     transition: 0.25s;
     -webkit-backface-visibility: hidden;
     margin:-1px;
-    margin-top: -1em;
+    margin-top: -1.3em;
     background-color: #fff;
     color: #333;
     text-align:left;
     font-size: 14px;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     line-height: 16px;
-    max-height: 485px;
+    max-height: 470px;
+    box-shadow: inset 0px 1px 0.5px rgba(0, 0, 0, 0.15);
 	overflow-y: scroll !important;
+    border-radius: 5px;
 }
 
 .social-feed-element::-webkit-scrollbar {
@@ -162,6 +164,8 @@
 
 .social-feed-header {
     text-align: center;
+    padding-bottom: 1em;
+    margin-top: -2em;
 }
 
 .social-feed-header h2 {
@@ -169,6 +173,7 @@
     font-size: 1.5em;
     color: rgb(85, 172, 238);
     display: inline-block;
+    padding-bottom: 0.25em
 }
 
 .social-feed-header i {
