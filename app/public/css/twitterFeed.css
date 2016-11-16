@@ -50,7 +50,7 @@
     font-style: italic;
 }
 .social-feed-element p {
-    margin: 10px 0 10px;
+    margin: 8px 0 10px;
     font-size: 1em;
 }
 .social-feed-element .media-body > p{
@@ -160,19 +160,18 @@
     background-color: rgba(85, 172, 238, 0.07);
 }
 
-.social-feed-element .social-feed-header {
+.social-feed-header {
     text-align: center;
 }
 
-.social-feed-element .social-feed-header h2 {
+.social-feed-header h2 {
     font-family: "Cabin", Helvetica, Arial, sans-serif !important;
     font-size: 1.5em;
     color: rgb(85, 172, 238);
-    text-shadow: 0 1px 3px rgba(0,0,0,0.15);
     display: inline-block;
 }
 
-.social-feed-element .social-feed-header i {
+.social-feed-header i {
     padding-right: 5px;
     color: rgb(85, 172, 238);
     display: inline-block;

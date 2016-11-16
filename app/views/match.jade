@@ -56,11 +56,10 @@ block content
       .col-md-8.col-md-offset-2#moveCol
         .panel-main
           include ./match-panel.jade
-      
-      .social-feed-element.col-md-2#makeBigger
-        .social-feed-header(style='display:none')
+      .social-feed-header.col-md-4(style='display:none')
           i.fa.fa-twitter.fa-2x
           h2 Politician Twitter Feed
+      .social-feed-element.col-md-2#makeBigger
         button(disabled='disabled').showTweetFeed.loading Loading Tweets
 
     .row.how-you-match-label
