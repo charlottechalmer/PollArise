@@ -83,7 +83,7 @@ block content
                     div.overlay
                       div.percentage
                         h4 #{Math.round(c.distance * 100)}%
-                    img(title='Compare me to #{c.user.name}', alt='#{c.user.name} picture', src='#{c.user.image}',id='s_#{index}')
+                    img(title='#{c.user.username}', alt='#{c.user.name} picture', src='#{c.user.image}',id='s_#{index}')
                   h5
                     h5 #{c.user.name}
               each c, index in similar_needs
@@ -92,7 +92,7 @@ block content
                     div.overlay
                       div.percentage
                         h4 #{Math.round(c.distance * 100)}%
-                    img(title='Compare me to #{c.user.name}', alt='#{c.user.name} picture', src='#{c.user.image}',id='s_#{index}')
+                    img(title='#{c.user.username}', alt='#{c.user.name} picture', src='#{c.user.image}',id='s_#{index}')
                   h5
                     h5 #{c.user.name}
               each c, index in similar_values
@@ -101,7 +101,7 @@ block content
                     div.overlay
                       div.percentage
                         h4 #{Math.round(c.distance * 100)}%
-                    img(title='Compare me to #{c.user.name}', alt='#{c.user.name} picture', src='#{c.user.image}',id='s_#{index}')
+                    img(title='#{c.user.username}', alt='#{c.user.name} picture', src='#{c.user.image}',id='s_#{index}')
                   h5
                     h5 #{c.user.name}
       .col-md-6.most-different
@@ -119,7 +119,7 @@ block content
                     div.overlay
                       div.percentage
                         h4 #{Math.round(c.distance * 100)}%
-                    img(title='Compare me to #{c.user.name}', alt='#{c.user.name} picture', src='#{c.user.image}',id='d_#{index}')
+                    img(title='#{c.user.username}', alt='#{c.user.name} picture', src='#{c.user.image}',id='d_#{index}')
                   h5 #{c.user.name}
               each c,index in different_needs
                 .col-sm-4.col-xs-6.text-center.other-celeb.needs.hide-traits
@@ -127,7 +127,7 @@ block content
                     div.overlay
                       div.percentage
                         h4 #{Math.round(c.distance * 100)}%
-                    img(title='Compare me to #{c.user.name}', alt='#{c.user.name} picture', src='#{c.user.image}',id='d_#{index}')
+                    img(title='#{c.user.username}', alt='#{c.user.name} picture', src='#{c.user.image}',id='d_#{index}')
                   h5 #{c.user.name}
               each c,index in different_values
                 .col-sm-4.col-xs-6.text-center.other-celeb.values.hide-traits
@@ -135,7 +135,7 @@ block content
                     div.overlay
                       div.percentage
                         h4 #{Math.round(c.distance * 100)}%
-                    img(title='Compare me to #{c.user.name}', alt='#{c.user.name} picture', src='#{c.user.image}',id='d_#{index}')
+                    img(title='#{c.user.username}', alt='#{c.user.name} picture', src='#{c.user.image}',id='d_#{index}')
                   h5 #{c.user.name}
     script(type='text/javascript').
       var similar_personalities =!{JSON.stringify(similar_personalities)};

@@ -55,11 +55,29 @@ function displayCelebrity(celebrity) {
       colorText.css({color: "3D3D3D"});
       colorElem.css({backgroundColor: "3D3D3D", color: "3D3D3D", borderColor: "3D3D3D"});
     }
-    // var repub = ['realdonaldtrump', 'mike_pence', 'SenJohnMcCain', 'Schwarzenegger', 'SarahPalinUSA', 'glennbeck', 'BobbyJindal', 'MicheleBachmann', 'MittRomney', 'RandPaul', 'SpeakerRyan', 'GovMikeHuckabee', 'JebBush', 'newtgingrich', 'GovernorPerry', 'SpeakerBoehner', 'KarlRove', 'JimDeMint', 'EricCantor', 'jasoninthehouse', 'DarrellIssa','ScottWalker', 'AllenWest', 'ChuckGrassley', 'THEHermanCain', 'RickSantorum', 'ChrisChristie', 'tedcruz', 'SenateMajLdr', 'CondoleezzaRice',];
-    // var democ = ['BarackObama', 'HillaryClinton', 'timkaine', 'algore', 'JohnKerry', 'JoeBiden', 'SenSanders', 'CoryBooker', 'NancyPelosi', 'BernieSanders', 'SenatorReid', 'JerryBrownGov', 'GabbyGiffords', 'clairecmc', 'SenWarren', 'NYCMayor', 'alfranken', 'SenGillibrand', 'MartinOMalley', 'MichelleObama', 'madeleine',];
-    // var liber = ['GovGaryJohnson', 'RepRonPaul'];
-    // var green = ['RalphNader', 'DrJillStein'];
-    // var indep = ['MikeBloomberg'];
+    var repub = ['realdonaldtrump', 'mike_pence', 'senjohnmccain', 'schwarzenegger', 'sarahpalinusa', 'glennbeck', 'bobbyjindal', 'michelebachmann', 'mittromney', 'randpaul', 'speakerryan', 'govmikehuckabee', 'jebbush', 'newtgingrich', 'governorperry', 'speakerboehner', 'karlrove', 'jimdemint', 'ericcantor', 'jasoninthehouse', 'darrellissa','scottwalker', 'allenwest', 'chuckgrassley', 'thehermancain', 'ricksantorum', 'chrischristie', 'tedcruz', 'senatemajldr', 'condoleezzarice'];
+    var democ = ['barackobama', 'hillaryclinton', 'timkaine', 'algore', 'johnkerry', 'joebiden', 'sensanders', 'corybooker', 'NancyPelosi', 'BernieSanders', 'SenatorReid', 'jerrybrowngov', 'gabbygiffords', 'clairecmc', 'senwarren', 'nycmayor', 'alfranken', 'sengillibrand', 'martinomalley', 'michelleobama', 'madeleine'];
+    var liber = ['govgaryjohnson', 'repronpaul'];
+    var green = ['ralphnader', 'drjillstein'];
+    var indep = ['mikebloomberg'];
+
+    // CHANGE OVERLAY COLOR
+    $('.overlay').on('load', function(e) {
+      var celebrity;
+      var username = $(this).find('img').prop('title');
+        if($.inArray(username, repub) > -1) {
+          $(this).addClass('overlay-red');
+        } else if ($.inArray(username, democ) > -1) {
+          $(this).addClass('overlay-blue');
+        } else if ($.inArray(username, liber) > -1) {
+          $(this).addClass('overlay-yellow');
+        } else if ($.inArray(username, green) > -1) {
+          $(this).addClass('overlay-green');
+        } else if ($.inArray(username, indep) > -1) {
+          $(this).addClass('overlay-grey');
+        }
+    });
+
   // Update traits
   var idType;
   if (currentType === PERSONALITY) idType = '#personality_trait_';
@@ -69,45 +87,6 @@ function displayCelebrity(celebrity) {
     $(idType + i).css('left', 'calc(' + (trait.value * 100) + '%)');
   });
 }
-
-
-$('.avatar-small').click(function(e) {
-  var celebrity;
-  var id = $(this).find('img').prop('id');
-  if (id.match('^s_')) {
-    if (currentType === PERSONALITY) celebrity = similar_personalities[id.slice(2)];
-    else if (currentType === NEEDS) celebrity = similar_needs[id.slice(2)];
-    else if (currentType === VALUES) celebrity = similar_values[id.slice(2)];
-  }
-  else {
-    if (currentType === PERSONALITY) celebrity = different_personalities[id.slice(2)];
-    else if (currentType === NEEDS) celebrity = different_needs[id.slice(2)];
-    else if (currentType === VALUES) celebrity = different_values[id.slice(2)];
-  }
-
-  if (celebrity)
-    displayCelebrity(celebrity);
-  else
-    console.log('celebrity not found!');
-
-});
-
-// CHANGE OVERLAY COLOR
-  $('.overlay').on('load', function(celebrity) {
-    var party = this.celebrity.user.politicalParty;
-     if (party === 'Republican') {
-        $(this).addClass('overlay-red');
-      } else if (party === 'Democratic') {
-        $(this).addClass('overlay-blue');
-      } else if (party === 'Libertarian') {
-        $(this).addClass('overlay-yellow');
-      } else if (party === 'Green Party') {
-        $(this).addClass('overlay-green');
-      } else if (party === 'Independent') {
-        $(this).addClass('overlay-grey');
-      }
-  });
-     
 
 /**
  * Makes updates for a profile type switch
