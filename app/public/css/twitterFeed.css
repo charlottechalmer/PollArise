@@ -484,6 +484,7 @@
     }
     .showTweetFeed {
         margin-top: 25px !important;
+        margin-left: -2em !important;
     }
     .showYourTweetFeed {
         margin-top: 25px !important;
