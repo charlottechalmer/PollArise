@@ -188,7 +188,7 @@
     .social-feed-element p {
         margin: 2px 0 0 56px !important;
     }
-    .social-feed-element .showTweetFeed {
+    .showTweetFeed {
     margin: 10px -5px 10px -14px !important;
     }
 }
@@ -234,7 +234,7 @@
     margin-top: -1em;
 }
 
-.social-feed-element .showTweetFeed {
+.showTweetFeed {
     padding: 6px 12px 6px 30px;
     margin: 10px -5px 10px 5px;
     border: #ccc solid 1px;
@@ -253,10 +253,10 @@
 
 }
 
-.social-feed-element .showTweetFeed:hover {
+.showTweetFeed:hover {
     background-color: rgba(85, 172, 238, 0.9);
 }
-.social-feed-element .showTweetFeed:disabled {
+.showTweetFeed:disabled {
     text-align: left;
     color: #999;
     background-color: rgba(228, 41, 41, 0.2);
@@ -486,7 +486,7 @@
     .social-feed-container p {
         margin: 2px 0 0 56px !important;
     }
-    .social-feed-container .showYourTweetFeed {
+    .showYourTweetFeed {
     margin: 10px -5px 10px -14px !important;
     }
 }
@@ -532,7 +532,7 @@
     margin-top: -1em;
 }
 
-.social-feed-container .showYourTweetFeed {
+.showYourTweetFeed {
     padding: 6px 12px 6px 30px;
     margin: 10px -5px 10px 5px;
     border: #ccc solid 1px;
@@ -549,10 +549,10 @@
     width: 11em;
 }
 
-.social-feed-container .showYourTweetFeed:hover {
+.showYourTweetFeed:hover {
     background-color: rgba(85, 172, 238, 0.9);
 }
-.social-feed-container .showYourTweetFeed:disabled {
+.showYourTweetFeed:disabled {
     text-align: left;
     color: #999;
     background-color: rgba(228, 41, 41, 0.2);
