@@ -261,7 +261,7 @@ a.switch-button-active {
   max-height: 50px;
   width: 100%;
   height: 100%;
-  margin: 1px auto;
+  margin: -3px auto;
   border-radius: 50%;
   overflow: hidden;
   position: relative;
