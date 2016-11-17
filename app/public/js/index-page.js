@@ -25,7 +25,7 @@ $('.celeb-img img').on('load', function() {
 	}
 });
 
-$('.politicians').on('load', function() {
+$('.politicians img').on('load', function() {
   // $(this).addClass('revealed');
   $(this).addClass('revealed');
 }).each(function() {
