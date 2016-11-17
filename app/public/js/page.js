@@ -55,27 +55,21 @@ function displayCelebrity(celebrity) {
       colorText.css({color: "3D3D3D"});
       colorElem.css({backgroundColor: "3D3D3D", color: "3D3D3D", borderColor: "3D3D3D"});
     }
-    var repub = ['realdonaldtrump', 'mike_pence', 'senjohnmccain', 'schwarzenegger', 'sarahpalinusa', 'glennbeck', 'bobbyjindal', 'michelebachmann', 'mittromney', 'randpaul', 'speakerryan', 'govmikehuckabee', 'jebbush', 'newtgingrich', 'governorperry', 'speakerboehner', 'karlrove', 'jimdemint', 'ericcantor', 'jasoninthehouse', 'darrellissa','scottwalker', 'allenwest', 'chuckgrassley', 'thehermancain', 'ricksantorum', 'chrischristie', 'tedcruz', 'senatemajldr', 'condoleezzarice'];
-    var democ = ['barackobama', 'hillaryclinton', 'timkaine', 'algore', 'johnkerry', 'joebiden', 'sensanders', 'corybooker', 'NancyPelosi', 'BernieSanders', 'SenatorReid', 'jerrybrowngov', 'gabbygiffords', 'clairecmc', 'senwarren', 'nycmayor', 'alfranken', 'sengillibrand', 'martinomalley', 'michelleobama', 'madeleine'];
-    var liber = ['govgaryjohnson', 'repronpaul'];
-    var green = ['ralphnader', 'drjillstein'];
-    var indep = ['mikebloomberg'];
 
     // CHANGE OVERLAY COLOR
     $('.overlay').on('load', function(e) {
-      var celebrity;
-      var username = $(this).find('img').prop('title');
-        if($.inArray(username, repub) > -1) {
-          $(this).addClass('overlay-red');
-        } else if ($.inArray(username, democ) > -1) {
-          $(this).addClass('overlay-blue');
-        } else if ($.inArray(username, liber) > -1) {
-          $(this).addClass('overlay-yellow');
-        } else if ($.inArray(username, green) > -1) {
-          $(this).addClass('overlay-green');
-        } else if ($.inArray(username, indep) > -1) {
-          $(this).addClass('overlay-grey');
-        }
+      var id = $(this).prop('id');
+      if (id.match('^R')) {
+        $(this).addClass('overlay-red');
+      } else if (id.match('^D')) {
+        $(this).addClass('overlay-blue');
+      } else if (id.match('^L')) {
+        $(this).addClass('overlay-yellow');
+      } else if (id.match('^G')) {
+        $(this).addClass('overlay-green');
+      } else if (id.match('^I')) {
+        $(this).addClass('overlay-grey');
+      }
     });
 
   // Update traits
