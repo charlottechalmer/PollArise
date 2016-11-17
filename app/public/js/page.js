@@ -94,7 +94,7 @@ $('.avatar-small').click(function(e) {
 
 // CHANGE OVERLAY COLOR
   $('.overlay').on('load', function(celebrity) {
-    var party = celebrity.user.politicalParty;
+    var party = this.celebrity.user.politicalParty;
      if (party === 'Republican') {
         $(this).addClass('overlay-red');
       } else if (party === 'Democratic') {
