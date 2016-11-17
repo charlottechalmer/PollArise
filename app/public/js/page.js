@@ -67,8 +67,8 @@ function displayCelebrity(celebrity) {
 }
 
     // CHANGE OVERLAY COLOR
-    $('.overlay').on('load', function(e) {
-      var id = $(this).prop('id');
+    $('.avatar-small').on('load', function(e) {
+      var id = $(this).find('.overlay').prop('id');
       if (id.match('^R')) {
         $(this).addClass('overlay-red');
       } else if (id.match('^D')) {
