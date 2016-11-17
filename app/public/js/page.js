@@ -56,6 +56,16 @@ function displayCelebrity(celebrity) {
       colorElem.css({backgroundColor: "3D3D3D", color: "3D3D3D", borderColor: "3D3D3D"});
     }
 
+  // Update traits
+  var idType;
+  if (currentType === PERSONALITY) idType = '#personality_trait_';
+  else if (currentType === NEEDS) idType = '#needs_trait_';
+  else if (currentType === VALUES) idType = '#values_trait_';
+  celebrity.profile.forEach(function(trait, i) {
+    $(idType + i).css('left', 'calc(' + (trait.value * 100) + '%)');
+  });
+}
+
     // CHANGE OVERLAY COLOR
     $('.overlay').on('load', function(e) {
       var id = $(this).prop('id');
@@ -71,16 +81,6 @@ function displayCelebrity(celebrity) {
         $(this).addClass('overlay-grey');
       }
     });
-
-  // Update traits
-  var idType;
-  if (currentType === PERSONALITY) idType = '#personality_trait_';
-  else if (currentType === NEEDS) idType = '#needs_trait_';
-  else if (currentType === VALUES) idType = '#values_trait_';
-  celebrity.profile.forEach(function(trait, i) {
-    $(idType + i).css('left', 'calc(' + (trait.value * 100) + '%)');
-  });
-}
 
 /**
  * Makes updates for a profile type switch
