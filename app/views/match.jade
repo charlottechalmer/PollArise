@@ -202,7 +202,7 @@ block content
           //- update_period: 5000,                            //Integer: Number of seconds before social-feed will attempt to load new posts.
           //- template: "bower_components/social-feed/template.html",                         //String: Filename used to get the post template.
           template_html:                                  //String: HTML used for each post. This overrides the 'template' filename option
-            `<article class="twitter-post" style="display: none"> 
+            `<article class="your-twitter-post" style="display: none"> 
             <img class="pull-left" src="{{=it.author_picture}}">
             <h4>{{=it.author_name}}</h4> <h6 class="pull-right">{{=it.author_screenName}}</h6>
             <p>{{=it.text}}</p> <div class="viewTweet"><a href="{{=it.link}}" class="pull-right" target="_blank">view tweet</a></div>
@@ -213,16 +213,14 @@ block content
             return  (content.text) ? content.text.indexOf('fuck') == -1 : true;
           },
           callback: function() {                          //Function: This is a callback function which is evoked when all the posts are collected and displayed
-            $('.showYourTweetFeed').removeClass('loading').prop("disabled", false).text("Your Tweets")
+            $('.showYourTweetFeed').removeClass('loading').prop("disabled", false).text("#{user.name}'s Tweets")
             console.log("All posts collected!");
           }
         });
         $('.showYourTweetFeed').click(function() {
-          $('.your-showYourTweetFeed').hide();
+          $('.showYourTweetFeed').hide();
           $('.social-feed-header').css({"display": "block"});
-          $('#makeBigger').removeClass('col-md-2').addClass('col-md-4');
           $('.social-feed-container').removeClass('noShadow');
-          $('#moveCol').removeClass('col-md-offset-2');
-          $('.twitter-post').show();
+          $('.your-twitter-post').show();
         })
       });
