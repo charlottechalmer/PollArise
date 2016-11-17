@@ -52,6 +52,7 @@
 .social-feed-element p {
     margin: 10px 0 10px;
     font-size: 1em;
+    font-weight: normal !important;
 }
 .social-feed-element .media-body > p{
     margin-bottom:4px;
@@ -202,14 +203,15 @@
 
 .social-feed-header h2 {
     font-family: 'Skinny Jeans', 'Arial Narrow', Arial, sans-serif !important;
-    font-size: 1.2em;
+    font-size: 1.5em;
     color: rgb(85, 172, 238);
     display: inline-block;
+    letter-spacing: 0.15em;
 }
 
 .social-feed-header i {
     padding-right: 5px;
-    font-size: 1.3em;
+    font-size: 1.6em;
     color: rgb(85, 172, 238);
     display: inline-block;
 }
@@ -354,6 +356,7 @@
 .social-feed-container p {
     margin: 10px 0 10px;
     font-size: 1em;
+    font-weight: normal !important;
 }
 .social-feed-container .media-body > p{
     margin-bottom:4px;
@@ -503,14 +506,15 @@
 
 .your-social-feed-header h2 {
     font-family: 'Skinny Jeans', 'Arial Narrow', Arial, sans-serif !important;
-    font-size: 1.2em;
+    font-size: 1.5em;
     color: rgb(85, 172, 238);
     display: inline-block;
+    letter-spacing: 0.15em;
 }
 
 .your-social-feed-header i {
     padding-right: 5px;
-    font-size: 1.3em;
+    font-size: 1.6em;
     color: rgb(85, 172, 238);
     display: inline-block;
 }
