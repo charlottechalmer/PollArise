@@ -459,12 +459,15 @@ a.switch-button-active {
   position: absolute;
   right: 3rem;
   bottom: .2rem;
-  font-size: .75rem;
   z-index: 2;
 }
 .more-info a {
   color: #404041;
   text-decoration: underline;
+  font-family: Helvetica, Arial;
+  font-weight: 100;
+  letter-spacing: 0;
+  font-size: 0.9em;
 }
 .more-info a:hover {
   color: #929497;
@@ -485,6 +488,10 @@ a.switch-button-active {
   display: inline-block;
   float: left;
   line-height: 20px;
+  font-size: .34em;
+  letter-spacing: 0;
+  font-weight: 100;
+  font-family: Helvetica, Arial;
 }
 .social-media .twitter {
   width: 76px;
