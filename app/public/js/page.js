@@ -73,7 +73,6 @@ function displayCelebrity(celebrity) {
       } else if (this.party === 'Independent') {
         $(this.overlay).addClass('overlay-grey');
       }
-    }
   // Update traits
   var idType;
   if (currentType === PERSONALITY) idType = '#personality_trait_';
