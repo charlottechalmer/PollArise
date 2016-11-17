@@ -107,6 +107,7 @@
 
 .noShadow.social-feed-element {
     box-shadow: none !important;
+    margin-top: 3em;
 }
 
 .social-feed-element{
