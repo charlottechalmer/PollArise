@@ -180,19 +180,15 @@ block content
         });
         $('.showTweetFeed').click(function() {
           $('.showTweetFeed').hide();
-          $('.social-feed-header').show();
+          $('.social-feed-header').css({"display": "block"});
           $('#makeBigger').removeClass('col-md-2').addClass('col-md-4');
           $('.social-feed-element').removeClass('noShadow');
           $('#moveCol').removeClass('col-md-offset-2');
           $('.twitter-post').show();
-          $('.your-twitter-post').hide();
-          $('your-social-feed-header').css({"display": "none"});
-          $('social-feed-container').css({'box-shadow': "none !important"});
-          $('.showTweetFeed').show();
         })
       });
       $(document).ready(function(){
-        $('.social-feed-container').socialfeed({
+        $('.social-feed-element').socialfeed({
           twitter:{
             accounts: ['@#{user.username}'],                      
           limit: 1,                                   //Integer: max number of tweets to load
@@ -223,13 +219,13 @@ block content
         $('.showYourTweetFeed').click(function() {
           $('.showYourTweetFeed').hide();
           $('#makeYoursBigger').removeClass('col-md-2').addClass('col-md-4');
-          $('.your-social-feed-header').show();
+          $('.your-social-feed-header').css({"display": "block"});
           $('.social-feed-container').removeClass('noShadow');
           $('#moveCol').removeClass('col-md-offset-2');
           $('.your-twitter-post').show();
           $('.twitter-post').hide();
-          $('social-feed-header').css({"display": "none"});
-          $('social-feed-element').css({'box-shadow': "none !important"});
+          $('social-feed-header').css({'display':'none'});
+          $('social-feed-element').addClass('noShadow');
           $('.showTweetFeed').show();
         })
       });
