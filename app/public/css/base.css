@@ -32,6 +32,11 @@ body {
     font-family: "Skinny Jeans";
     src: url(../fonts/SkinnyJeans.ttf) format("truetype");
 }
+
+@font-face {
+  font-family: "SJ Numbers";
+  src: url(../fonts/forNumbersSJ.ttf) format("truetype");
+}
 /*p.customfont { 
     font-family: "Skinny Jeans", Verdana, Tahoma;
 }*/
