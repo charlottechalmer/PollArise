@@ -483,11 +483,10 @@
         margin-top: 3em !important;
     }
     .showTweetFeed {
-        margin-top: 10px;
-        margin-left: 30%
+        margin-top: 25px !important;
     }
     .showYourTweetFeed {
-        margin-top: 10px;
+        margin-top: 10px !important;
     }
 }
 
