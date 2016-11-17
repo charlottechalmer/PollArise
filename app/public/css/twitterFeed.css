@@ -222,6 +222,7 @@
     font-weight: bold;
     display: inline-block;
     font-size: 1rem;
+    letter-spacing: 0;
 }
 .social-feed-element .twitter-post h6 {
     font-weight: 100;
@@ -236,6 +237,7 @@
     font-size: 80%;
     margin-left: 4em;
     margin-top: -1em;
+    letter-spacing: 0;
 }
 
 .showTweetFeed {
@@ -534,6 +536,7 @@
     font-weight: bold;
     display: inline-block;
     font-size: 1rem;
+    letter-spacing: 0;
 }
 .social-feed-container .your-twitter-post h6 {
     font-weight: 100;
@@ -548,6 +551,7 @@
     font-size: 80%;
     margin-left: 4em;
     margin-top: -1em;
+    letter-spacing: 0;
 }
 
 .showYourTweetFeed {
