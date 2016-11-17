@@ -124,7 +124,7 @@
     border-radius: 5px;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     line-height: 16px;
-    max-height: 485px;
+    max-height: 425px;
     overflow-y: scroll !important;
 }
 
@@ -197,7 +197,7 @@
     text-align: center;
     padding-bottom: .5em;
     margin-bottom: 1em;
-    margin-top: -1.2em;
+    margin-top: 0;
 }
 
 .social-feed-header h2 {
