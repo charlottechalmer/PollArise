@@ -60,19 +60,6 @@ function displayCelebrity(celebrity) {
     // var liber = ['GovGaryJohnson', 'RepRonPaul'];
     // var green = ['RalphNader', 'DrJillStein'];
     // var indep = ['MikeBloomberg'];
-
-    var overlay = $('.avatar-small div:first-child');
-      if (this.party === 'Republican') {
-        $(this.overlay).addClass('overlay-red');
-      } else if (this.party === 'Democratic') {
-        $(this.overlay).addClass('overlay-blue');
-      } else if (this.party === 'Libertarian') {
-        $(this.overlay).addClass('overlay-yellow');
-      } else if (this.party === 'Green Party') {
-        $(this.overlay).addClass('overlay-green');
-      } else if (this.party === 'Independent') {
-        $(this.overlay).addClass('overlay-grey');
-      }
   // Update traits
   var idType;
   if (currentType === PERSONALITY) idType = '#personality_trait_';
@@ -83,6 +70,44 @@ function displayCelebrity(celebrity) {
   });
 }
 
+
+$('.avatar-small').click(function(e) {
+  var celebrity;
+  var id = $(this).find('img').prop('id');
+  if (id.match('^s_')) {
+    if (currentType === PERSONALITY) celebrity = similar_personalities[id.slice(2)];
+    else if (currentType === NEEDS) celebrity = similar_needs[id.slice(2)];
+    else if (currentType === VALUES) celebrity = similar_values[id.slice(2)];
+  }
+  else {
+    if (currentType === PERSONALITY) celebrity = different_personalities[id.slice(2)];
+    else if (currentType === NEEDS) celebrity = different_needs[id.slice(2)];
+    else if (currentType === VALUES) celebrity = different_values[id.slice(2)];
+  }
+
+  if (celebrity)
+    displayCelebrity(celebrity);
+  else
+    console.log('celebrity not found!');
+
+});
+
+// CHANGE OVERLAY COLOR
+  $('.overlay').on('load', function(celebrity) {
+    var party = celebrity.user.politicalParty;
+     if (party === 'Republican') {
+        $(this).addClass('overlay-red');
+      } else if (party === 'Democratic') {
+        $(this).addClass('overlay-blue');
+      } else if (party === 'Libertarian') {
+        $(this).addClass('overlay-yellow');
+      } else if (party === 'Green Party') {
+        $(this).addClass('overlay-green');
+      } else if (party === 'Independent') {
+        $(this).addClass('overlay-grey');
+      }
+  });
+     
 
 /**
  * Makes updates for a profile type switch
