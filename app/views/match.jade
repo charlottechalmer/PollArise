@@ -180,7 +180,7 @@ block content
         });
         $('.showTweetFeed').click(function() {
           $('.showTweetFeed').hide();
-          $('.social-feed-header').css({"display": "block"});
+          $('.social-feed-header').show();
           $('#makeBigger').removeClass('col-md-2').addClass('col-md-4');
           $('.social-feed-element').removeClass('noShadow');
           $('#moveCol').removeClass('col-md-offset-2');
@@ -224,7 +224,7 @@ block content
           $('#moveCol').removeClass('col-md-offset-2');
           $('.your-twitter-post').show();
           $('.twitter-post').hide();
-          $('social-feed-header').css({'display':'none'});
+          $('social-feed-header').hide();
           $('social-feed-element').addClass('noShadow');
           $('.showTweetFeed').show();
         })
