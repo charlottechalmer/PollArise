@@ -76,7 +76,7 @@ function displayCelebrity(celebrity) {
       $('.caricature').html('<img src="/SlyngstadCartoons/RyanEdited3.png" style="height:10em; width:auto; opacity: 1; margin-top:-10em">').addClass('bounceInUp').removeClass('hide');
     } else if (celebrity.user.name === "Donald J. Trump") {
       $('.caricature').html('<img src="/SlyngstadCartoons/TrumpEdited.png" style="height:10em; width:auto; opacity: 1; margin-top:-10em">').addClass('bounceInUp').removeClass('hide');
-    } else {
+    } else if (celebrity.user.name !== "Donald J. Trump" || "Paul Ryan" || "Marco Rubio" || "Dr. Rand Paul" || "Mike Pence" || "Sarah Palin" || "Barack Obama" || "Mitch McConnell" || "Tim Kaine" || "Jeb Bush" || "Mike Huckabee" || "Hillary Clinton" || "Carly Fiorina" || "Ted Cruz" || "Chris Christie" || "John Boehner" || "Bill Clinton" || "Joe Biden" || "Bernie Sanders" || "Dr. Ben Carson" ) {
       $('caricature').addClass('hide').removeClass('bounceInUp');
     }
 
