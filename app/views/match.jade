@@ -58,7 +58,7 @@ block content
       .your-social-feed-header.col-md-4(style='display:none')
         i.fa.fa-twitter
         h2 #{user.name}'s Twitter Feed
-      .social-feed-container.noShadow.col-md-2#makeBigger
+      .social-feed-container.noShadow.col-md-2#makeYoursBigger
         button(disabled='disabled').showYourTweetFeed.loading Loading Tweets
 
       .social-feed-header.col-md-4(style='display:none')
@@ -212,13 +212,13 @@ block content
             return  (content.text) ? content.text.indexOf('fuck') == -1 : true;
           },
           callback: function() {                          //Function: This is a callback function which is evoked when all the posts are collected and displayed
-            $('.showYourTweetFeed').removeClass('loading').prop("disabled", false).text("#{user.username}'s Tweets")
+            $('.showYourTweetFeed').removeClass('loading').prop("disabled", false).text("Your Tweets")
             console.log("All posts collected!");
           }
         });
         $('.showYourTweetFeed').click(function() {
           $('.showYourTweetFeed').hide();
-          $('#makeBigger').removeClass('col-md-2').addClass('col-md-4');
+          $('#makeYoursBigger').removeClass('col-md-2').addClass('col-md-4');
           $('.your-social-feed-header').css({"display": "block"});
           $('.social-feed-container').removeClass('noShadow');
           $('#moveCol').removeClass('col-md-offset-2');
