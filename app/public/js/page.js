@@ -76,8 +76,8 @@ function displayCelebrity(celebrity) {
       $('.caricature').html('<img src="/SlyngstadCartoons/RyanEdited3.png" style="height:10em; width:auto; opacity: 1; margin-top:-10em">').addClass('bounceInUp').removeClass('hide');
     } else if (celebrity.user.name === "Donald J. Trump") {
       $('.caricature').html('<img src="/SlyngstadCartoons/TrumpEdited.png" style="height:10em; width:auto; opacity: 1; margin-top:-10em">').addClass('bounceInUp').removeClass('hide');
-    } else if (!(celebrity.user.name == "Donald J. Trump" || celebrity.user.name == "Paul Ryan" || celebrity.user.name == "Marco Rubio" || celebrity.user.name == "Dr. Rand Paul" || celebrity.user.name == "Mike Pence" || celebrity.user.name == "Sarah Palin" || celebrity.user.name == "Barack Obama" || celebrity.user.name == "Mitch McConnell" || celebrity.user.name == "Tim Kaine" || celebrity.user.name == "Jeb Bush" || celebrity.user.name == "Mike Huckabee" || celebrity.user.name == "Hillary Clinton" || celebrity.user.name == "Carly Fiorina" || celebrity.user.name == "Ted Cruz" || celebrity.user.name == "Chris Christie" || celebrity.user.name == "John Boehner" || celebrity.user.name == "Bill Clinton" || celebrity.user.name == "Joe Biden" || celebrity.user.name == "Bernie Sanders" || celebrity.user.name == "Dr. Ben Carson")) {
-      $('caricature').addClass('hide').removeClass('bounceInUp');
+    } else {
+      $('caricature').hide();
     }
 
   var party = celebrity.user.politicalParty;
