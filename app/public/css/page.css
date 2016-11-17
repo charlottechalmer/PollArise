@@ -252,9 +252,15 @@ a.switch-button-active {
 }
 
 .how-you-match-label {
-  margin-top: .8rem;
-
+  margin-top: 3.1rem;
 }
+
+@media screen and (max-width: 992px) {
+    .how-you-match-label {
+        margin-top: .8rem;
+    }
+}
+
 .how-you-match-label p {
   text-align: center;
 }
