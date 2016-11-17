@@ -52,7 +52,8 @@
 .social-feed-element p {
     margin: 10px 0 10px;
     font-size: 1em;
-    font-weight: 100 !important;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300 !important;
     letter-spacing: 0 !important;
 }
 .social-feed-element .media-body > p{
@@ -255,6 +256,7 @@
     margin-top: 0 !important;
     letter-spacing: 0.07em;
     font-weight: 900 !important;
+    z-index: 1;
 }
 
 .showTweetFeed:hover {
@@ -357,7 +359,8 @@
 .social-feed-container p {
     margin: 10px 0 10px;
     font-size: 1em;
-    font-weight: 100 !important;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300 !important;
     letter-spacing: 0 !important;
 }
 .social-feed-container .media-body > p{
@@ -430,7 +433,7 @@
     border-radius: 5px;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     line-height: 16px;
-    max-height: 485px;
+    max-height: 425px;
     overflow-y: scroll !important;
 }
 
@@ -478,6 +481,13 @@
     }
     .your-social-feed-header {
         margin-top: 3em !important;
+    }
+    .showTweetFeed {
+        margin-top: 10px;
+        margin-left: 30%
+    }
+    .showYourTweetFeed {
+        margin-top: 10px;
     }
 }
 
