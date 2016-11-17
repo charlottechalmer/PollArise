@@ -5,6 +5,11 @@
   opacity: 1;
 }
 
+.your-personality {
+  font-family: "Skinny Jeans", "Cabin", "Helvetica";
+  letter-spacing: 0 !important;
+}
+
 .alert-info {
   background-color: #f1f1f2;
   border: 1px solid #fcb614;

@@ -495,7 +495,7 @@
     text-align: center;
     padding-bottom: .5em;
     margin-bottom: 1em;
-    margin-top: -1.2em;
+    margin-top: 0;
 }
 
 .your-social-feed-header h2 {
@@ -547,6 +547,8 @@
     box-shadow: 1px 1px 3px rgba(0,0,0,0.15);;
     font-family: 'Cabin';
     width: 11em;
+    margin-top: 0 !important;
+    z-index: 1;
 }
 
 .showYourTweetFeed:hover {
