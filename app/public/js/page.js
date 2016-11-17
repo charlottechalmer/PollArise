@@ -77,7 +77,7 @@ function displayCelebrity(celebrity) {
     } else if (celebrity.user.name === "Donald J. Trump") {
       $('.caricature').html('<img src="/SlyngstadCartoons/TrumpEdited.png" style="height:10em; width:auto; opacity: 1; margin-top:-10em">').addClass('bounceInUp').removeClass('hide');
     } else {
-      $('caricature').hide();
+      $('caricature').addClass('hide').removeClass('bounceInUp');
     }
 
   var party = celebrity.user.politicalParty;
