@@ -52,15 +52,15 @@ block content
               | #{info}
 
     .row
-      .col-md-8.col-md-offset-2#moveCol
-        .panel-main
-          include ./match-panel.jade
-      
       .your-social-feed-header.col-md-4(style='display:none')
         i.fa.fa-twitter
         h2 #{user.name}'s Twitter Feed
       .social-feed-container.col-md-2#makeBigger
         button(disabled='disabled').showYourTweetFeed.loading Loading Tweets
+
+      .col-md-8.col-md-offset-2#moveCol
+        .panel-main
+          include ./match-panel.jade
 
       .social-feed-header.col-md-4(style='display:none')
         i.fa.fa-twitter
@@ -191,7 +191,7 @@ block content
       $(document).ready(function(){
         $('.social-feed-element').socialfeed({
           twitter:{
-            accounts: ['#{user.username}'],                      
+            accounts: ['@#{user.username}'],                      
           limit: 1,                                   //Integer: max number of tweets to load
           consumer_key: "ano0hWwr3tdqKYT7xb6UEGK9R",         //String: consumer key. make sure to have your app read-only
           consumer_secret: "OmIx30WlbVBGbq8S41HoF7tw7O0bnJDMaDqVYdpPAvgTbS6kLh" //String: consumer secret key. make sure to have your app read-only
