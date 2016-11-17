@@ -52,16 +52,15 @@ block content
               | #{info}
 
     .row
+      .col-md-8.col-md-offset-2#moveCol
+        .panel-main
+          include ./match-panel.jade
       .your-social-feed-header.col-md-4(style='display:none')
         i.fa.fa-twitter
         h2 #{user.name}'s Twitter Feed
       .social-feed-container.col-md-2#makeBigger
         button(disabled='disabled').showYourTweetFeed.loading Loading Tweets
-
-      .col-md-8.col-md-offset-2#moveCol
-        .panel-main
-          include ./match-panel.jade
-
+        
       .social-feed-header.col-md-4(style='display:none')
         i.fa.fa-twitter
         h2 Politician Twitter Feed
