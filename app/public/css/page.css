@@ -568,6 +568,7 @@ a.tlink {
   display: inline-block;
   margin-top: .4rem;
   font-weight: 900 !important;
+  letter-spacing: 0.1em;
 }
 
 .panel-comparisons {
@@ -583,6 +584,7 @@ a.tlink {
 .panel-heading p {
   color: #f1f1f2;
   text-align: center;
+  letter-spacing: 0.14em;
 }
 
 .most-similar .panel-heading p span {
