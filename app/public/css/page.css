@@ -7,7 +7,9 @@
 
 .your-personality {
   font-family: "Skinny Jeans", "Cabin", "Helvetica";
-  letter-spacing: 0 !important;
+  letter-spacing: 0.1em !important;
+  text-align: center;
+  margin-top: -1.6rem;
 }
 
 .alert-info {
@@ -500,10 +502,6 @@ a.switch-button-active {
   float: left;
 }
 
-.your-personality {
-  text-align: center;
-  margin-top: -1.6rem;
-}
 .your-personality .description {
   display: inline-block;
   background-color: white;

@@ -27,7 +27,7 @@ body {
   /*font-family: 'Cabin';*/
   font-family: "Skinny Jeans", "Cabin", "Helvetica";
   letter-spacing: 0.04em;
-  font-weight: bolder;
+  font-weight: 900;
 
 }
 @font-face {
@@ -44,7 +44,7 @@ body {
 }*/
 h1, h2, h3, h4, h5, h6, p {
   margin: 0px;
-  font-weight: bolder;
+  font-weight: 900;
 }
 h1, .h1 {
   font-size: 42px;
@@ -115,6 +115,7 @@ button.button, a.button {
   position: absolute;
   right: 20px;
   top: 16px;
+  letter-spacing: 0.1em;
 }
 .top-nav .home-link a {
   color: #bbbdbf;
