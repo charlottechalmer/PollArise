@@ -39,43 +39,43 @@ function displayCelebrity(celebrity) {
     if(celebrity.user.name === "Dr. Ben Carson") {
       $('.caricature').html('<img src="/SlyngstadCartoons/BenCarsonEdited.png" style="max-height:100%; max-width:100%; opacity: 1">');
     } else if (celebrity.user.name === "Bernie Sanders") {
-      $('.caricature').html('<img src="/SlyngstadCartoons/BernieEdited.png" style="max-height:100%; max-width:100%; opacity: 1"');
+      $('.caricature').html('<img src="/SlyngstadCartoons/BernieEdited.png" style="max-height:100%; max-width:100%; opacity: 1">');
     } else if (celebrity.user.name === "Joe Biden") {
-      $('.caricature').html('<img src="/SlyngstadCartoons/BidenLibertyEdited.png" style="max-height:100%; max-width:100%; opacity: 1"');
+      $('.caricature').html('<img src="/SlyngstadCartoons/BidenLibertyEdited.png" style="max-height:100%; max-width:100%; opacity: 1">');
     } else if (celebrity.user.name === "Bill Clinton") {
-      $('.caricature').html('<img src="/SlyngstadCartoons/BillClintonEdited.png" style="max-height:100%; max-width:100%; opacity: 1"');
+      $('.caricature').html('<img src="/SlyngstadCartoons/BillClintonEdited.png" style="max-height:100%; max-width:100%; opacity: 1">');
     } else if (celebrity.user.name === "John Boehner") {
-      $('.caricature').html('<img src="/SlyngstadCartoons/BohenerEdited.png" style="max-height:100%; max-width:100%; opacity: 1"');
+      $('.caricature').html('<img src="/SlyngstadCartoons/BohenerEdited.png" style="max-height:100%; max-width:100%; opacity: 1">');
     } else if (celebrity.user.name === "Chris Christie") {
-      $('.caricature').html('<img src="/SlyngstadCartoons/Christie3Edited.png" style="max-height:100%; max-width:100%; opacity: 1"');
+      $('.caricature').html('<img src="/SlyngstadCartoons/Christie3Edited.png" style="max-height:100%; max-width:100%; opacity: 1">');
     } else if (celebrity.user.name === "Ted Cruz") {
-      $('.caricature').html('<img src="/SlyngstadCartoons/CruzEdited4.png" style="max-height:100%; max-width:100%; opacity: 1"');
+      $('.caricature').html('<img src="/SlyngstadCartoons/CruzEdited4.png" style="max-height:100%; max-width:100%; opacity: 1">');
     } else if (celebrity.user.name === "Carly Fiorina") {
-      $('.caricature').html('<img src="/SlyngstadCartoons/Fiorinaedited.png" style="max-height:100%; max-width:100%; opacity: 1"');
+      $('.caricature').html('<img src="/SlyngstadCartoons/Fiorinaedited.png" style="max-height:100%; max-width:100%; opacity: 1">');
     } else if (celebrity.user.name === "Hillary Clinton") {
-      $('.caricature').html('<img src="/SlyngstadCartoons/HillzEdited.png" style="max-height:100%; max-width:100%; opacity: 1"');
+      $('.caricature').html('<img src="/SlyngstadCartoons/HillzEdited.png" style="max-height:100%; max-width:100%; opacity: 1">');
     } else if (celebrity.user.name === "Mike Huckabee") {
-      $('.caricature').html('<img src="/SlyngstadCartoons/HuckabeeEdited.png" style="max-height:100%; max-width:100%; opacity: 1"');
+      $('.caricature').html('<img src="/SlyngstadCartoons/HuckabeeEdited.png" style="max-height:100%; max-width:100%; opacity: 1">');
     } else if (celebrity.user.name === "Jeb Bush") {
-      $('.caricature').html('<img src="./SlyngstadCartoons/JebBushEdited2.png" style="max-height:100%; max-width:100%; opacity: 1"');
+      $('.caricature').html('<img src="./SlyngstadCartoons/JebBushEdited2.png" style="max-height:100%; max-width:100%; opacity: 1">');
     } else if (celebrity.user.name === "Tim Kaine") {
-      $('.caricature').html('<img src="/SlyngstadCartoons/KaineEdited.png" style="max-height:100%; max-width:100%; opacity: 1"');
+      $('.caricature').html('<img src="/SlyngstadCartoons/KaineEdited.png" style="max-height:100%; max-width:100%; opacity: 1">');
     } else if (celebrity.user.name === "Mitch McConnell") {
-      $('.caricature').html('<img src="/SlyngstadCartoons/McConnellEdited.png" style="max-height:100%; max-width:100%; opacity: 1"');
+      $('.caricature').html('<img src="/SlyngstadCartoons/McConnellEdited.png" style="max-height:100%; max-width:100%; opacity: 1">');
     } else if (celebrity.user.name === "Barack Obama") {
-      $('.caricature').html('<img src="/SlyngstadCartoons/ObamaEdited.png" style="max-height:100%; max-width:100%; opacity: 1"');
+      $('.caricature').html('<img src="/SlyngstadCartoons/ObamaEdited.png" style="max-height:100%; max-width:100%; opacity: 1">');
     } else if (celebrity.user.name === "Sarah Palin") {
-      $('.caricature').html('<img src="/SlyngstadCartoons/PalinEdited.png" style="max-height:100%; max-width:100%; opacity: 1"');
+      $('.caricature').html('<img src="/SlyngstadCartoons/PalinEdited.png" style="max-height:100%; max-width:100%; opacity: 1">');
     } else if (celebrity.user.name === "Mike Pence") {
-      $('.caricature').html('<img src="/SlyngstadCartoons/PenceEdited.png" style="max-height:100%; max-width:100%; opacity: 1"');
+      $('.caricature').html('<img src="/SlyngstadCartoons/PenceEdited.png" style="max-height:100%; max-width:100%; opacity: 1">');
     } else if (celebrity.user.name === "Dr. Rand Paul") {
-      $('.caricature').html('<img src="/SlyngstadCartoons/RandPaulEdited.png" style="max-height:100%; max-width:100%; opacity: 1"');
+      $('.caricature').html('<img src="/SlyngstadCartoons/RandPaulEdited.png" style="max-height:100%; max-width:100%; opacity: 1">');
     } else if (celebrity.user.name === "Marco Rubio") {
-      $('.caricature').html('<img src="/SlyngstadCartoons/Rubio2Edited.png" style="max-height:100%; max-width:100%; opacity: 1"');
+      $('.caricature').html('<img src="/SlyngstadCartoons/Rubio2Edited.png" style="max-height:100%; max-width:100%; opacity: 1">');
     } else if (celebrity.user.name === "Paul Ryan") {
-      $('.caricature').html('<img src="/SlyngstadCartoons/RyanEdited3.png" style="max-height:100%; max-width:100%; opacity: 1"');
+      $('.caricature').html('<img src="/SlyngstadCartoons/RyanEdited3.png" style="max-height:100%; max-width:100%; opacity: 1">');
     } else if (celebrity.user.name === "Donald J. Trump") {
-      $('.caricature').html('<img src="/SlyngstadCartoons/TrumpEdited.png" style="max-height:100%; max-width:100%; opacity: 1"');
+      $('.caricature').html('<img src="/SlyngstadCartoons/TrumpEdited.png" style="max-height:100%; max-width:100%; opacity: 1">');
     }
 
   var party = celebrity.user.politicalParty;
