@@ -540,6 +540,14 @@ a.tlink {
   min-height: 80px;
   margin-bottom: 1.8rem;
 }
+
+@media (min-width: 768px) {
+  .other-celeb {
+    padding-left: 9px;
+    padding-right: 9px;
+  }
+}
+
 .other-celeb h5 {
   display: inline-block;
   margin-top: .4rem;
