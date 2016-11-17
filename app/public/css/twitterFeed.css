@@ -114,7 +114,7 @@
     transition: 0.25s;
     -webkit-backface-visibility: hidden;
     margin:-1px;
-    margin-top: -1.5em;
+    margin-top: 0;
     background-color: #fff;
     color: #333;
     text-align:left;
@@ -458,7 +458,7 @@
     .social-feed-container .your-twitter-post {
         margin: auto !important;
     }
-    .social-feed-header {
+    .your-social-feed-header {
         margin-top: 3em !important;
     }
 }
@@ -479,6 +479,27 @@
     .social-feed-container .showYourTweetFeed {
     margin: 10px -5px 10px -14px !important;
     }
+}
+
+.your-social-feed-header {
+    text-align: center;
+    padding-bottom: .5em;
+    margin-bottom: 1em;
+    margin-top: -1.2em;
+}
+
+.your-social-feed-header h2 {
+    font-family: "Cabin", Helvetica, Arial, sans-serif !important;
+    font-size: 1.2em;
+    color: rgb(85, 172, 238);
+    display: inline-block;
+}
+
+.your-social-feed-header i {
+    padding-right: 5px;
+    font-size: 1.3em;
+    color: rgb(85, 172, 238);
+    display: inline-block;
 }
 
 .social-feed-container .twitter-post h4 {
