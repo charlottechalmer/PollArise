@@ -67,10 +67,10 @@ function displayCelebrity(celebrity) {
 }
 
     // CHANGE OVERLAY COLOR
-    $('.avatar-small').on('load', function(e) {
-      var id = $(this).find('.overlay').prop('id');
+    $('.overlay').on('load', function() {
+      var id = $(this).prop('id');
       if (id.match('^R')) {
-        $(this).addClass('overlay-red');
+        $(this).css({'color': 'black'});
       } else if (id.match('^D')) {
         $(this).addClass('overlay-blue');
       } else if (id.match('^L')) {
