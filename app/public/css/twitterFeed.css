@@ -111,6 +111,7 @@
 .noShadow.social-feed-element {
     box-shadow: none !important;
     margin-top: 0.75em;
+    z-index: -1;
 }
 
 .social-feed-element{

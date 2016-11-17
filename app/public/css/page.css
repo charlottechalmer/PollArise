@@ -252,7 +252,7 @@ a.switch-button-active {
 }
 
 .how-you-match-label {
-  margin-top: 3.1rem;
+  margin-top: .8rem;
 
 }
 .how-you-match-label p {
@@ -486,7 +486,6 @@ a.switch-button-active {
   border: 1px solid #DDD;
   background-color: white;
   padding: 0.5rem .65rem;
-  z-index: 1;
 }
 .social-media h6 {
   display: inline-block;
