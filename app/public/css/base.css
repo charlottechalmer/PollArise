@@ -34,8 +34,8 @@ body {
 }
 
 @font-face {
-  font-family: "SJ Numbers";
-  src: url(../fonts/forNumbersSJ.ttf) format("truetype");
+  font-family: "for Numbers";
+  src: url(../fonts/forNumbers.ttf) format("truetype");
 }
 /*p.customfont { 
     font-family: "Skinny Jeans", Verdana, Tahoma;

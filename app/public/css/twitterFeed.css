@@ -201,7 +201,7 @@
 }
 
 .social-feed-header h2 {
-    font-family: "Cabin", Helvetica, Arial, sans-serif !important;
+    font-family: 'Skinny Jeans', 'Arial Narrow', Arial, sans-serif !important;
     font-size: 1.2em;
     color: rgb(85, 172, 238);
     display: inline-block;
@@ -247,7 +247,7 @@
     border-top-color: #eee;
     border-bottom-color: #bbb;
     box-shadow: 1px 1px 3px rgba(0,0,0,0.15);;
-    font-family: 'Cabin';
+    font-family: 'Skinny Jeans', 'Arial Narrow', Arial, sans-serif;
     width: 11em;
     margin-top: 0 !important;
 
@@ -499,7 +499,7 @@
 }
 
 .your-social-feed-header h2 {
-    font-family: "Cabin", Helvetica, Arial, sans-serif !important;
+    font-family: 'Skinny Jeans', 'Arial Narrow', Arial, sans-serif !important;
     font-size: 1.2em;
     color: rgb(85, 172, 238);
     display: inline-block;
@@ -545,7 +545,7 @@
     border-top-color: #eee;
     border-bottom-color: #bbb;
     box-shadow: 1px 1px 3px rgba(0,0,0,0.15);;
-    font-family: 'Cabin';
+    font-family: 'Skinny Jeans', 'Arial Narrow', Arial, sans-serif;
     width: 11em;
     margin-top: 0 !important;
     z-index: 1;
