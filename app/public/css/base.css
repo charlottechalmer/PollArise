@@ -24,8 +24,16 @@ html {
   font-size: 16px;
 }
 body {
-  font-family: 'Cabin';
+  /*font-family: 'Cabin';*/
+  font-family: "Skinny Jeans", "Cabin", "Helvetica";
 }
+@font-face {
+    font-family: "Skinny Jeans";
+    src: url(../fonts/SkinnyJeans.ttf) format("truetype");
+}
+/*p.customfont { 
+    font-family: "Skinny Jeans", Verdana, Tahoma;
+}*/
 h1, h2, h3, h4, h5, h6, p {
   margin: 0px;
   font-weight: normal;
