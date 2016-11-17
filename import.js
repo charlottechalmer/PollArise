@@ -5,62 +5,66 @@ mongoose.connect("mongodb://heroku_3s8krnvz:uk0hbagqb4ve7e9euegji3lkdk@ds153677.
 var Profile = require('./app/models/profile.js');
 
 var politicians = [
-['BarackObama', 'Democratic'],
-['realdonaldtrump', 'Republican'],
-['mike_pence', 'Republican'],
-['HillaryClinton', 'Democratic'],
-['timkaine', 'Democratic'],
-['SenJohnMcCain', 'Republican'],
-['GovGaryJohnson', 'Libertarian'],
-['algore', 'Democratic'],
-['Schwarzenegger', 'Republican'],
-['SarahPalinUSA', 'Republican'],
-['RepRonPaul', 'Libertarian'],
-['RalphNader', 'Green Party'],
-['glennbeck', 'Republican'],
-['JohnKerry', 'Democratic'],
-['MicheleBachmann', 'Republican'],
-['MittRomney', 'Republican'],
-['MikeBloomberg', 'Independent'],
-['JoeBiden', 'Democratic'],
-['SenSanders', 'Democratic'],
-['DrJillStein', 'Green Party'],
-['RandPaul', 'Republican'],
-['CoryBooker', 'Democratic'],
-['SpeakerRyan', 'Republican'],
-['BobbyJindal', 'Republican'],
-['NancyPelosi', 'Democratic'],
-['GovMikeHuckabee', 'Republican'],
-['JebBush', 'Republican'],
-['BernieSanders', 'Democratic'],
-['newtgingrich', 'Republican'],
-['GovernorPerry', 'Republican'],
-['SpeakerBoehner', 'Republican'],
-['KarlRove', 'Republican'],
-['SenatorReid', 'Democratic'],
-['JerryBrownGov', 'Democratic'],
-['JimDeMint', 'Republican'],
-['EricCantor', 'Republican'],
-['jasoninthehouse', 'Republican'],
-['DarrellIssa', 'Republican'],
-['GabbyGiffords', 'Democratic'],
-['ScottWalker', 'Republican'],
-['AllenWest', 'Republican'],
-['clairecmc', 'Democratic'],
-['SenWarren', 'Democratic'],
-['ChuckGrassley', 'Republican'],
-['NYCMayor', 'Democratic'],
-['THEHermanCain', 'Republican'],
-['alfranken', 'Democratic'],
-['SenGillibrand', 'Democratic'],
-['MartinOMalley', 'Democratic'],
-['RickSantorum', 'Republican'],
-['ChrisChristie', 'Republican'],
-['tedcruz', 'Republican'],
-['SenateMajLdr', 'Republican'],
-['CondoleezzaRice', 'Republican'],
-['MichelleObama', 'Democratic'],
-['madeleine', 'Democratic']
+// ['BarackObama', 'Democratic'],
+// ['realdonaldtrump', 'Republican'],
+// ['mike_pence', 'Republican'],
+// ['HillaryClinton', 'Democratic'],
+// ['timkaine', 'Democratic'],
+// ['SenJohnMcCain', 'Republican'],
+// ['GovGaryJohnson', 'Libertarian'],
+// ['algore', 'Democratic'],
+// ['Schwarzenegger', 'Republican'],
+// ['SarahPalinUSA', 'Republican'],
+// ['RepRonPaul', 'Libertarian'],
+// ['RalphNader', 'Green Party'],
+// ['glennbeck', 'Republican'],
+// ['JohnKerry', 'Democratic'],
+// ['MicheleBachmann', 'Republican'],
+// ['MittRomney', 'Republican'],
+// ['MikeBloomberg', 'Independent'],
+// ['JoeBiden', 'Democratic'],
+// ['SenSanders', 'Democratic'],
+// ['DrJillStein', 'Green Party'],
+// ['RandPaul', 'Republican'],
+// ['CoryBooker', 'Democratic'],
+// ['SpeakerRyan', 'Republican'],
+// ['BobbyJindal', 'Republican'],
+// ['NancyPelosi', 'Democratic'],
+// ['GovMikeHuckabee', 'Republican'],
+// ['JebBush', 'Republican'],
+// ['BernieSanders', 'Democratic'],
+// ['newtgingrich', 'Republican'],
+// ['GovernorPerry', 'Republican'],
+// ['SpeakerBoehner', 'Republican'],
+// ['KarlRove', 'Republican'],
+// ['SenatorReid', 'Democratic'],
+// ['JerryBrownGov', 'Democratic'],
+// ['JimDeMint', 'Republican'],
+// ['EricCantor', 'Republican'],
+// ['jasoninthehouse', 'Republican'],
+// ['DarrellIssa', 'Republican'],
+// ['GabbyGiffords', 'Democratic'],
+// ['ScottWalker', 'Republican'],
+// ['AllenWest', 'Republican'],
+// ['clairecmc', 'Democratic'],
+// ['SenWarren', 'Democratic'],
+// ['ChuckGrassley', 'Republican'],
+// ['NYCMayor', 'Democratic'],
+// ['THEHermanCain', 'Republican'],
+// ['alfranken', 'Democratic'],
+// ['SenGillibrand', 'Democratic'],
+// ['MartinOMalley', 'Democratic'],
+// ['RickSantorum', 'Republican'],
+// ['ChrisChristie', 'Republican'],
+// ['tedcruz', 'Republican'],
+// ['SenateMajLdr', 'Republican'],
+// ['CondoleezzaRice', 'Republican'],
+// ['MichelleObama', 'Democratic'],
+// ['madeleine', 'Democratic'],
+// ['CarlyFiorina', 'Republican'],
+// ['marcorubio', 'Republican'],
+// ['RealBenCarson', 'Republican'],
+['billclinton', 'Democratic']
 ];
 
 var port = process.env.PORT || 3000;
@@ -78,17 +82,17 @@ for (var p in politicians) {
 	console.log("updated");
 }
 
-Profile.find({}, (err, data) => {
-	data.forEach(function(obj) {
-		var politicalParty;
-		for(var p of politicians) {
-			if (p[0].toLowerCase() === obj.username) {
-				politicalParty = p[1];
-				break;
-			}
-		}
-		Profile.update({username: obj.username}, {$set: {"politicalParty": politicalParty}}, {new: true}, (err, data) => {
-			console.log("updated politicalParty");
-		});
-	});
-})
+// Profile.find({}, (err, data) => {
+// 	data.forEach(function(obj) {
+// 		var politicalParty;
+// 		for(var p of politicians) {
+// 			if (p[0].toLowerCase() === obj.username) {
+// 				politicalParty = p[1];
+// 				break;
+// 			}
+// 		}
+// 		Profile.update({username: obj.username}, {$set: {"politicalParty": politicalParty}}, {new: true}, (err, data) => {
+// 			console.log("updated politicalParty");
+// 		});
+// 	});
+// })
