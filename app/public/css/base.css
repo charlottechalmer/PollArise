@@ -26,6 +26,7 @@ html {
 body {
   /*font-family: 'Cabin';*/
   font-family: "Skinny Jeans", "Cabin", "Helvetica";
+  letter-spacing: 0.04em;
 }
 @font-face {
     font-family: "Skinny Jeans";
