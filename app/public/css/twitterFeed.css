@@ -251,6 +251,7 @@
     width: 11em;
     margin-top: 0 !important;
     letter-spacing: 0.07em;
+    font-weight: 900 !important;
 }
 
 .showTweetFeed:hover {
@@ -262,6 +263,7 @@
     background-color: rgba(228, 41, 41, 0.2);
     width: 11em ;
     letter-spacing: 0.07em;
+    font-weight: 900 !important;
 }
 .loading:after {
     font-size: 1.25em;
@@ -551,6 +553,7 @@
     margin-top: 0 !important;
     z-index: 1;
     letter-spacing: 0.07em;
+    font-weight: 900 !important;
 }
 
 .showYourTweetFeed:hover {
@@ -562,6 +565,7 @@
     background-color: rgba(228, 41, 41, 0.2);
     width: 11em ;
     letter-spacing: 0.07em;
+    font-weight: 900 !important;
 }
 .loading:after {
     font-size: 1.25em;
