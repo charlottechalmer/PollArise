@@ -287,6 +287,13 @@
     line-height: 1.5em;
     font-weight: 500;  
 }
+
+
+
+
+
+
+
 /*YOUR TWITTER FEED STYLE*/
 .social-feed-container.hidden{
     background-color:red !important;
@@ -502,19 +509,19 @@
     display: inline-block;
 }
 
-.social-feed-container .twitter-post h4 {
+.social-feed-container .your-twitter-post h4 {
     font-weight: bold;
     display: inline-block;
     font-size: 1rem;
 }
-.social-feed-container .twitter-post h6 {
+.social-feed-container .your-twitter-post h6 {
     font-weight: normal;
     display: inline-block;
     padding-top: 0.3em;
     color: #8899a6;
 }
 
-.social-feed-container .viewTweet{
+.social-feed-container .viewYourTweet{
     display: inline-block;
     width: 25em;
     font-size: 80%;
