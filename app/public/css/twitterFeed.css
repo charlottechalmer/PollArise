@@ -169,14 +169,6 @@
     color: #000;
     background-color: rgba(85, 172, 238, 0.07);
 }
-@media screen and (max-width: 992px) {
-    .social-feed-element .twitter-post {
-        margin: auto !important;
-    }
-    .social-feed-header {
-        margin-top: 5em !important;
-    }
-}
 
 @media screen and (min-width: 992px) and (max-width: 1199px) {
     .social-feed-element .twitter-post h6 {
@@ -478,11 +470,17 @@
     background-color: rgba(85, 172, 238, 0.07);
 }
 @media screen and (max-width: 992px) {
+    .social-feed-element .twitter-post {
+        margin: auto !important;
+    }
     .social-feed-container .your-twitter-post {
         margin: auto !important;
     }
+    .social-feed-header {
+        margin-top: 7em !important;
+    }
     .your-social-feed-header {
-        margin-top: 5em !important;
+        margin-top: 7em !important;
     }
     .showTweetFeed {
         margin-top: 25px !important;
