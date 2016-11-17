@@ -411,6 +411,7 @@
 
 .noShadow.social-feed-container {
     box-shadow: none !important;
+    z-index: -1;
 }
 
 .social-feed-container{

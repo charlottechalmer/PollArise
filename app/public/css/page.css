@@ -486,6 +486,7 @@ a.switch-button-active {
   border: 1px solid #DDD;
   background-color: white;
   padding: 0.5rem .65rem;
+  z-index: 1;
 }
 .social-media h6 {
   display: inline-block;
