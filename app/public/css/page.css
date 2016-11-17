@@ -271,7 +271,7 @@ a.switch-button-active {
   top: 0px;
 }
 .avatar-small  #Green {
-  background-color: rgba(3, 143, 25, 0.52);
+  background-color: rgba(3, 143, 25, 0.45);
   -webkit-transition: .3s;
   -moz-transition: .3s;
   -o-transition: .3s;
@@ -291,7 +291,7 @@ a.switch-button-active {
   transition: 0s;
 }
 .avatar-small  #Libertarian {
-  background-color: rgba(255, 203, 0, 0.52);
+  background-color: rgba(255, 203, 0, 0.45);
   -webkit-transition: .3s;
   -moz-transition: .3s;
   -o-transition: .3s;
@@ -312,7 +312,7 @@ a.switch-button-active {
 }
 
 .avatar-small  #Democratic {
-  background-color: rgba(0, 152, 255, 0.52);
+  background-color: rgba(0, 152, 255, 0.45);
   -webkit-transition: .3s;
   -moz-transition: .3s;
   -o-transition: .3s;
@@ -333,7 +333,7 @@ a.switch-button-active {
 }
 
 .avatar-small  #Independent {
-  background-color: rgba(61, 61, 61, 0.52);
+  background-color: rgba(61, 61, 61, 0.45);
   -webkit-transition: .3s;
   -moz-transition: .3s;
   -o-transition: .3s;
@@ -354,7 +354,7 @@ a.switch-button-active {
 }
 
 .avatar-small #Republican {
-  background-color: rgba(212, 0, 0, 0.52);
+  background-color: rgba(212, 0, 0, 0.45);
   -webkit-transition: .3s;
   -moz-transition: .3s;
   -o-transition: .3s;
