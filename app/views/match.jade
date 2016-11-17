@@ -55,13 +55,13 @@ block content
       .col-md-8.col-md-offset-2#moveCol
         .panel-main
           include ./match-panel.jade
-      .your-social-feed-header.col-md-4.hide
+      .your-social-feed-header.col-md-4(style='display:none')
         i.fa.fa-twitter
         h2 #{user.name}'s Twitter Feed
       .social-feed-container.noShadow.col-md-2#makeYoursBigger
         button(disabled='disabled').showYourTweetFeed.loading Loading Tweets
 
-      .social-feed-header.col-md-4.hide
+      .social-feed-header.col-md-4(style='display:none')
         i.fa.fa-twitter
         h2 Politician Twitter Feed
       .social-feed-element.noShadow.col-md-2#makeBigger
@@ -187,8 +187,8 @@ block content
           $('.twitter-post').show();
           $('.your-twitter-post').hide();
           $('your-social-feed-header').css({"display": "none"});
-          $('social-feed-container').addClass('noShadow');
-          $('.showYourTweetFeed').show();
+          $('social-feed-container').css({'box-shadow': "none !important"});
+          $('.showTweetFeed').show();
         })
       });
       $(document).ready(function(){
@@ -223,13 +223,13 @@ block content
         $('.showYourTweetFeed').click(function() {
           $('.showYourTweetFeed').hide();
           $('#makeYoursBigger').removeClass('col-md-2').addClass('col-md-4');
-          $('.your-social-feed-header').toggle(display);
-          $('.social-feed-container').toggleClass('noShadow');
+          $('.your-social-feed-header').show();
+          $('.social-feed-container').removeClass('noShadow');
           $('#moveCol').removeClass('col-md-offset-2');
           $('.your-twitter-post').show();
           $('.twitter-post').hide();
-          //- $('social-feed-header').css({"display": "none"});
-          //- $('social-feed-element').addClass('noShadow');
+          $('social-feed-header').css({"display": "none"});
+          $('social-feed-element').css({'box-shadow': "none !important"});
           $('.showTweetFeed').show();
         })
       });
