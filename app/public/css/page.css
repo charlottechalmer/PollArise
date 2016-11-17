@@ -270,7 +270,7 @@ a.switch-button-active {
   width: 100%;
   top: 0px;
 }
-.avatar-small .overlay-yellow {
+.avatar-small .overlay #Green_Party {
   background-color: rgba(78, 229, 123, 0.52);
   -webkit-transition: .3s;
   -moz-transition: .3s;
@@ -291,7 +291,7 @@ a.switch-button-active {
   transition: 0s;
 }
 
-.avatar-small .overlay-red {
+.avatar-small #Republican div {
   background-color: rgba(240, 78, 55, 0.52);
   -webkit-transition: .3s;
   -moz-transition: .3s;

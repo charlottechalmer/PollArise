@@ -66,22 +66,6 @@ function displayCelebrity(celebrity) {
   });
 }
 
-    // CHANGE OVERLAY COLOR
-    $('.overlay').on('load', function() {
-      var id = $(this).prop('id');
-      if (id.match('^R')) {
-        $(this).css({'color': 'black'});
-      } else if (id.match('^D')) {
-        $(this).addClass('overlay-blue');
-      } else if (id.match('^L')) {
-        $(this).addClass('overlay-yellow');
-      } else if (id.match('^G')) {
-        $(this).addClass('overlay-green');
-      } else if (id.match('^I')) {
-        $(this).addClass('overlay-grey');
-      }
-    });
-
 /**
  * Makes updates for a profile type switch
  */
