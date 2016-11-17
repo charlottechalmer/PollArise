@@ -142,7 +142,7 @@
     border-radius: 50%;
     height: 3em;
     width: 3em;
-    margin: 0 1em 3em 0;
+    margin: 0 1em 5em 0;
     opacity: 1;
 }
 
@@ -250,7 +250,7 @@
     font-family: 'Skinny Jeans', 'Arial Narrow', Arial, sans-serif;
     width: 11em;
     margin-top: 0 !important;
-
+    letter-spacing: 0.07em;
 }
 
 .showTweetFeed:hover {
@@ -261,6 +261,7 @@
     color: #999;
     background-color: rgba(228, 41, 41, 0.2);
     width: 11em ;
+    letter-spacing: 0.07em;
 }
 .loading:after {
     font-size: 1.25em;
@@ -549,6 +550,7 @@
     width: 11em;
     margin-top: 0 !important;
     z-index: 1;
+    letter-spacing: 0.07em;
 }
 
 .showYourTweetFeed:hover {
@@ -559,6 +561,7 @@
     color: #999;
     background-color: rgba(228, 41, 41, 0.2);
     width: 11em ;
+    letter-spacing: 0.07em;
 }
 .loading:after {
     font-size: 1.25em;

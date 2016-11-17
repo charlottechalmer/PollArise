@@ -18,7 +18,7 @@
   margin-bottom: 3rem;
 }
 .alert-info span {
-  font-weight: 600;
+  font-weight: 900 !important;
 }
 
 .panel-main {
@@ -54,13 +54,13 @@
 }
 .how-it-worked h3 {
   color: #fcb614;
-  font-weight: 600;
+  font-weight: 900 !important;
   margin-top: 3rem;
   margin-bottom: .8rem;
 }
 .how-it-worked p {
   color: #f1f1f2;
-  font-weight: 600;
+  font-weight: 900 !important;
 }
 .how-it-worked a {
   color: #1cc665;
@@ -560,7 +560,7 @@ a.tlink {
 .other-celeb h5 {
   display: inline-block;
   margin-top: .4rem;
-  font-weight: 600;
+  font-weight: 900 !important;
 }
 
 .panel-comparisons {
