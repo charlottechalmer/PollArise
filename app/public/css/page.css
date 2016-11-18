@@ -13,6 +13,7 @@
 }
 
 .alert-info {
+  font-family: "for Numbers", Helvetica, Arial;
   background-color: #f1f1f2;
   border: 1px solid #fcb614;
   color: #404041;
@@ -20,6 +21,7 @@
   margin-bottom: 3rem;
 }
 .alert-info span {
+  font-family: "for Numbers", Helvetica, Arial;
   font-weight: 900 !important;
 }
 
