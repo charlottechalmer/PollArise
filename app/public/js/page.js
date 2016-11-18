@@ -94,7 +94,7 @@ function displayCelebrity(celebrity) {
     } else if (party === "Libertarian") {
       colorText.css({color: "FFCB00"});
       colorElem.css({backgroundColor: "FFCB00", color: "FFCB00", borderColor: "FFCB00"});
-    } else if (party === "Green Party") {
+    } else if (party === "Green") {
       colorText.css({color: "038F19"});
       colorElem.css({backgroundColor: "038F19", color: "038F19", borderColor: "038F19"});
     } else if (party === "Independent") {
