@@ -11,6 +11,9 @@
   text-align: center;
   margin-top: -1.6rem;
 }
+.error {
+  font-family: "for Numbers", Helvetica, Arial;
+}
 
 .alert-info {
   font-family: "for Numbers", Helvetica, Arial;
